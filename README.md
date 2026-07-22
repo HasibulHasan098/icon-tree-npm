@@ -57,23 +57,26 @@ Find icon IDs by name using the CLI:
 
 ```bash
 npx icontree search "arrow"
-# → {arrow-2, icon}
-# → {arrow-3, icon}
-# → {arrow-circle-down, icon}
-# → {arrow-circle-left, icon}
-# → {arrow-right, icon}
+# → arrow-2
+# → arrow-3
+# → arrow-circle-down
+# → arrow-circle-left
+# → arrow-right
 
 npx icontree search "arrow right"
-# → {arrow-right, icon}
-# → {arrow-right2, icon}
-# → {arrow-right3, icon}
-# → {arrow-right4, icon}
+# → arrow-right
+# → arrow-right2
+# → arrow-right3
 
-npx icontree search "heart add"
-# → {heart-add, icon}
+npx icontree search "arrow,icon,gg"
+# → arrow-2
+# → arrow-3
+# → arrow-circle-down
+# → icon-(icx)
+# → (all results from each keyword combined, no duplicates)
 ```
 
-Multi-word queries work — "arrow right" matches `arrow-right`, `arrow-right2`, etc.
+Multiple keywords — separate by comma or space. Results are deduplicated.
 
 ## How it works
 
