@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { useLottie } from "lottie-react";
 import { registry, type IconId } from "./registry";
@@ -25,7 +23,7 @@ function useLatestRef<T>(value: T): React.MutableRefObject<T> {
   return ref;
 }
 
-export function Icon({
+export default function Icon({
   id,
   size = 24,
   color = "currentColor",

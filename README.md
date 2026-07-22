@@ -2,50 +2,27 @@
 
 React component for rendering Lottie icons from the [IconTree](https://icontree.cosmoscope.workers.dev) API, with runtime color control, size control, and 4 playback modes.
 
+No icon files bundled — icons are fetched from the API at runtime. The registry contains only API links, keeping the package lightweight.
+
 ## Install
 
 ```bash
 npm install icon-tree-animate
 ```
 
-Requires `react` and `react-dom` (>=18) as peer dependencies.
-
-## CLI — Add icons
-
-Searches by icon name, downloads the JSON, and regenerates the registry.
-
-```bash
-npx icontree add --search "<query>"
-```
-
-```bash
-# Quick pick — takes the first result
-npx icontree add --search "heart"
-
-# Interactive — browse and pick from results
-npx icontree add --search "arrow" --interactive
-```
-
-The `--interactive` flag opens a picker where you can select **multiple icons** at once:
-
-- `0` — single selection
-- `0, 2, 4` — comma or space separated  
-- `0-3` — range
-- `all` — all results
-
-The icon's display name is used as the file name (slugified).
+Requires `react` and `react-dom` (>=18) and `lottie-react` as dependencies.
 
 ## Component
 
 ```tsx
-import { Icon } from "icon-tree-animate";
+import Icon from "icon-tree-animate";
 ```
 
 ### Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `id` | `IconId` | required | Icon identifier, must match a key in the registry |
+| `id` | `IconId` | required | Icon identifier (e.g. `"heart"`, `"arrow-right"`) |
 | `size` | `number \| string` | `24` | Width and height of the icon |
 | `color` | `string` | `"currentColor"` | Hex color string, e.g. `"#ff0000"` |
 | `mode` | `"static" \| "loop" \| "onClick" \| "hover"` | `"static"` | Playback mode |
@@ -72,32 +49,37 @@ import { Icon } from "icon-tree-animate";
 
 ## How it works
 
-**Design-time (CLI):** `add-icon.js` fetches raw Lottie JSON from the IconTree API and saves it to `src/icons/`. No colors are applied.
+**Runtime:** The icon JSON is fetched from the IconTree API (lazy, one request per icon), recolored in-memory using the `color` prop, and rendered via Lottie. Results are memoized by icon + color.
 
-**Runtime (Component):** The icon JSON is loaded via dynamic import (tree-shakeable), recolored in-memory using the `color` prop, and rendered via Lottie. No network requests.
+**Recolor:** The `recolorLottie()` function deep-clones the JSON, converts hex to Lottie RGBA float format, and walks the layer tree to update fill and stroke colors.
 
-**Recolor:** The `recolorLottie()` function deep-clones the JSON, converts hex to Lottie RGBA float format, and walks the layer tree to update fill and stroke colors. Results are memoized by icon + color.
+**Registry:** `src/registry.ts` maps icon IDs to API fetch URLs. No icon data is shipped with the package.
+
+## Regenerating the registry
+
+When you add new icon files to your source folder, regenerate the registry:
+
+```bash
+npm run generate-registry
+```
+
+This reads the `.json` filenames from the configured source folder and writes `src/registry.ts` with fetch entries pointing to the API.
 
 ## Build
 
 ```bash
-npm run build        # Build dist/
-npm run generate-registry  # Regenerate src/registry.ts from src/icons/
+npm run build        # Compile dist/index.js + dist/index.mjs
 ```
 
 ## Project structure
 
 ```
-icontree/
 ├── scripts/
-│   ├── add-icon.js           # CLI: add icons from the API
-│   └── generate-registry.js  # Generate registry.ts from icon files
+│   └── generate-registry.js   # Generate registry.ts from a folder of icon names
 ├── src/
-│   ├── Icon.tsx              # React component
-│   ├── recolor.ts            # Pure recolor function + memo cache
-│   ├── registry.ts           # Auto-generated icon map
-│   ├── types.ts              # Lottie type definitions
-│   └── icons/                # Downloaded icon JSON files
-├── dist/                     # Built output
-└── example/App.tsx           # Usage example
+│   ├── Icon.tsx               # React component
+│   ├── recolor.ts             # Recolor function + memo cache
+│   ├── registry.ts            # Auto-generated icon → API URL map
+│   └── types.ts               # Lottie type definitions
+└── dist/                      # Built output (no icon data)
 ```
