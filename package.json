@@ -11,7 +11,7 @@
     }
   },
   "bin": {
-    "icontree": "./scripts/search-icons.js"
+    "icontree": "scripts/search-icons.js"
   },
   "scripts": {
     "generate-registry": "node scripts/generate-registry.js \"D:/Downloads/Iconaassets/public/icons\"",
