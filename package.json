@@ -16,7 +16,7 @@
     "icontree": "./scripts/add-icon.js"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && node scripts/copy-icons.js",
     "generate-registry": "node scripts/generate-registry.js"
   },
   "peerDependencies": {

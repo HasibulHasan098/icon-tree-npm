@@ -12,18 +12,28 @@ Requires `react` and `react-dom` (>=18) as peer dependencies.
 
 ## CLI — Add icons
 
-```bash
-npx icontree add <iconId> --search "<query>"
-```
-
-Searches the IconTree API, downloads the icon JSON to `src/icons/<iconId>.json`, and regenerates the registry.
+Searches by icon name, downloads the JSON, and regenerates the registry.
 
 ```bash
-npx icontree add heart --search "heart"
-npx icontree add arrow-right --search "arrow right" --interactive
+npx icontree add --search "<query>"
 ```
 
-The `--interactive` flag lets you pick from multiple results.
+```bash
+# Quick pick — takes the first result
+npx icontree add --search "heart"
+
+# Interactive — browse and pick from results
+npx icontree add --search "arrow" --interactive
+```
+
+The `--interactive` flag opens a picker where you can select **multiple icons** at once:
+
+- `0` — single selection
+- `0, 2, 4` — comma or space separated  
+- `0-3` — range
+- `all` — all results
+
+The icon's display name is used as the file name (slugified).
 
 ## Component
 

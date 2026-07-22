@@ -51,7 +51,11 @@ export function Icon({
     registry[id]()
       .then((json) => {
         if (!cancelled) {
-          rawJsonRef.current = json;
+          // Dynamic import of a JSON module returns { default: <data> }
+          // but tsup's ESM chunks re-export the fields directly,
+          // so we handle both shapes.
+          const data = (json as any).default ?? json;
+          rawJsonRef.current = data as LottieJSON;
           setJsonReady(true);
         }
       })

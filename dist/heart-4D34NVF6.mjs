@@ -1,5 +1,3 @@
-import "./chunk-UJCSKKID.mjs";
-
 // src/icons/heart.json
 var v = "5.5.9";
 var fr = 29.9700012207031;
