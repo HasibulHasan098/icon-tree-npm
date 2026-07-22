@@ -3,9 +3,7 @@ import React from "react";
 import { useLottie } from "lottie-react";
 
 // src/registry.ts
-var registry = {
-  "heart": () => import("./heart-4D34NVF6.mjs")
-};
+var registry = {};
 
 // src/recolor.ts
 function hexToRgba(hex) {
@@ -89,7 +87,11 @@ function Icon({
     let cancelled = false;
     rawJsonRef.current = null;
     setJsonReady(false);
-    registry[id]().then((json) => {
+    const load = registry[id];
+    if (typeof load !== "function") {
+      return;
+    }
+    load().then((json) => {
       if (!cancelled) {
         const data = json.default ?? json;
         rawJsonRef.current = data;

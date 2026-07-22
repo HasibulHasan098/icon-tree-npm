@@ -48,7 +48,12 @@ export function Icon({
     rawJsonRef.current = null;
     setJsonReady(false);
 
-    registry[id]()
+    const load = (registry as Record<string, unknown>)[id];
+    if (typeof load !== "function") {
+      return;
+    }
+
+    (load as () => Promise<unknown>)()
       .then((json) => {
         if (!cancelled) {
           // Dynamic import of a JSON module returns { default: <data> }
