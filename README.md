@@ -38,14 +38,42 @@ import Icon from "icon-tree-animate";
 - **onClick** — Idle at frame 0. Plays once on click. Calls `onClick` if provided.
 - **hover** — Idle at frame 0. Plays once on mouse enter. Lets animation finish on mouse leave.
 
-### Examples
+## Usage
+
+### Component
 
 ```tsx
+import Icon from "icon-tree-animate";
+
 <Icon id="heart" size={48} color="#ff0000" mode="static" />
 <Icon id="heart" size={48} color="#00ff00" mode="loop" />
 <Icon id="heart" size={48} color="#0000ff" mode="onClick" onClick={() => console.log("clicked")} />
 <Icon id="heart" size={48} color="#ffaa00" mode="hover" />
 ```
+
+### Search icons
+
+Find icon IDs by name using the CLI:
+
+```bash
+npx icontree search "arrow"
+# → {arrow-2, icon}
+# → {arrow-3, icon}
+# → {arrow-circle-down, icon}
+# → {arrow-circle-left, icon}
+# → {arrow-right, icon}
+
+npx icontree search "arrow right"
+# → {arrow-right, icon}
+# → {arrow-right2, icon}
+# → {arrow-right3, icon}
+# → {arrow-right4, icon}
+
+npx icontree search "heart add"
+# → {heart-add, icon}
+```
+
+Multi-word queries work — "arrow right" matches `arrow-right`, `arrow-right2`, etc.
 
 ## How it works
 
