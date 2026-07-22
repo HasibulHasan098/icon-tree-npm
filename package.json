@@ -1,6 +1,6 @@
 {
   "name": "icon-tree-animate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React component for rendering Lottie icons from the IconTree API",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -9,6 +9,9 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
+  },
+  "bin": {
+    "icontree": "./scripts/search-icons.js"
   },
   "scripts": {
     "generate-registry": "node scripts/generate-registry.js \"D:/Downloads/Iconaassets/public/icons\"",
