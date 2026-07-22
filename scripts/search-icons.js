@@ -5,12 +5,12 @@
  *   npx icontree search "<query>"
  *
  * Searches the IconTree API by name and shows matching icon IDs.
- * Handles multi-word queries (e.g. "arrow right" → arrow-right).
+ * Supports multiple keywords — comma or space separated.
  *
  * Examples:
  *   npx icontree search "arrow"
- *   npx icontree search "arrow right"
- *   npx icontree search "heart"
+ *   npx icontree search "arrow,icon,gg"
+ *   npx icontree search "heart add"
  */
 
 const https = require("https");
@@ -44,24 +44,48 @@ async function main() {
     console.error("Examples:");
     console.error('  npx icontree search "arrow"');
     console.error('  npx icontree search "arrow right"');
-    console.error('  npx icontree search "heart add"');
+    console.error('  npx icontree search "arrow,icon,gg"');
     process.exit(1);
   }
 
-  const query = args.slice(1).join(" ");
+  // Split query by comma or space into individual keywords
+  const raw = args.slice(1).join(" ");
+  const keywords = raw
+    .split(/[,]+/)
+    .map((k) => k.trim())
+    .filter(Boolean)
+    .flatMap((k) => k.split(/\s+/))
+    .filter(Boolean);
 
-  const data = await fetchJSON(
-    `${API_BASE}/icon/search?q=${encodeURIComponent(query)}`
-  );
+  const seen = new Set();
+  const allResults = [];
 
-  if (!data.results || data.results.length === 0) {
-    console.log(`No results found for "${query}"`);
+  for (const keyword of keywords) {
+    try {
+      const data = await fetchJSON(
+        `${API_BASE}/icon/search?q=${encodeURIComponent(keyword)}`
+      );
+      if (data.results) {
+        for (const r of data.results) {
+          const name = r.name || r.id;
+          if (name && !seen.has(name)) {
+            seen.add(name);
+            allResults.push(name);
+          }
+        }
+      }
+    } catch {
+      // skip failed keywords
+    }
+  }
+
+  if (allResults.length === 0) {
+    console.log(`No results for "${raw}"`);
     process.exit(0);
   }
 
-  for (const r of data.results) {
-    const name = r.name || r.id || "unknown";
-    console.log(`{${name}, icon}`);
+  for (const name of allResults) {
+    console.log(name);
   }
 }
 
