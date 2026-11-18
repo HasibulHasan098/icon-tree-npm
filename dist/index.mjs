@@ -4,3790 +4,952 @@ import { useLottie } from "lottie-react";
 
 // src/registry.ts
 var registry = {
-  "23": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/23.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 23");
-    return r.json();
-  }),
-  "24-support": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/24-support.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 24-support");
-    return r.json();
-  }),
-  "24": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/24.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 24");
-    return r.json();
-  }),
-  "25": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/25.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 25");
-    return r.json();
-  }),
-  "26": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/26.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 26");
-    return r.json();
-  }),
-  "27": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/27.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 27");
-    return r.json();
-  }),
-  "3d-cube-scan": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/3d-cube-scan.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 3d-cube-scan");
-    return r.json();
-  }),
-  "3d-rotate": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/3d-rotate.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 3d-rotate");
-    return r.json();
-  }),
-  "3d-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/3d-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 3d-square");
-    return r.json();
-  }),
-  "3dcube": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/3dcube.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 3dcube");
-    return r.json();
-  }),
-  "3square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/3square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: 3square");
-    return r.json();
-  }),
-  "Property 1=linear, Property 2=math": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/Property 1=linear, Property 2=math.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: Property 1=linear, Property 2=math");
-    return r.json();
-  }),
-  "aave-(aave)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/aave-(aave).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: aave-(aave)");
-    return r.json();
-  }),
-  "activity": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/activity.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: activity");
-    return r.json();
-  }),
-  "add-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/add-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: add-circle");
-    return r.json();
-  }),
-  "add-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/add-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: add-square");
-    return r.json();
-  }),
-  "add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: add");
-    return r.json();
-  }),
-  "additem": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/additem.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: additem");
-    return r.json();
-  }),
-  "airdrop": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/airdrop.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: airdrop");
-    return r.json();
-  }),
-  "airplane-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/airplane-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: airplane-square");
-    return r.json();
-  }),
-  "airplane": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/airplane.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: airplane");
-    return r.json();
-  }),
-  "airpod": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/airpod.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: airpod");
-    return r.json();
-  }),
-  "airpods": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/airpods.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: airpods");
-    return r.json();
-  }),
-  "alarm": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/alarm.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: alarm");
-    return r.json();
-  }),
-  "align-bottom": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/align-bottom.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: align-bottom");
-    return r.json();
-  }),
-  "align-horizontally": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/align-horizontally.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: align-horizontally");
-    return r.json();
-  }),
-  "align-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/align-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: align-left");
-    return r.json();
-  }),
-  "align-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/align-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: align-right");
-    return r.json();
-  }),
-  "align-top-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/align-top-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: align-top-2");
-    return r.json();
-  }),
-  "align-vertically": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/align-vertically.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: align-vertically");
-    return r.json();
-  }),
-  "android": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/android.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: android");
-    return r.json();
-  }),
-  "ankr-(ankr)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ankr-(ankr).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ankr-(ankr)");
-    return r.json();
-  }),
-  "apple": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/apple.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: apple");
-    return r.json();
-  }),
-  "aquarius": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/aquarius.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: aquarius");
-    return r.json();
-  }),
-  "archive-book": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/archive-book.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: archive-book");
-    return r.json();
-  }),
-  "archive": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/archive.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: archive");
-    return r.json();
-  }),
-  "arrange-circle-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrange-circle-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrange-circle-2");
-    return r.json();
-  }),
-  "arrange-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrange-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrange-circle");
-    return r.json();
-  }),
-  "arrange-square-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrange-square-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrange-square-2");
-    return r.json();
-  }),
-  "arrange-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrange-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrange-square");
-    return r.json();
-  }),
-  "arrow-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-2");
-    return r.json();
-  }),
-  "arrow-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-3");
-    return r.json();
-  }),
-  "arrow-circle-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-circle-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-circle-down");
-    return r.json();
-  }),
-  "arrow-circle-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-circle-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-circle-left");
-    return r.json();
-  }),
-  "arrow-circle-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-circle-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-circle-right");
-    return r.json();
-  }),
-  "arrow-circle-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-circle-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-circle-up");
-    return r.json();
-  }),
-  "arrow-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-down");
-    return r.json();
-  }),
-  "arrow-down2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-down2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-down2");
-    return r.json();
-  }),
-  "arrow-down3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-down3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-down3");
-    return r.json();
-  }),
-  "arrow-down4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-down4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-down4");
-    return r.json();
-  }),
-  "arrow-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-left");
-    return r.json();
-  }),
-  "arrow-left2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-left2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-left2");
-    return r.json();
-  }),
-  "arrow-left3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-left3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-left3");
-    return r.json();
-  }),
-  "arrow-left4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-left4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-left4");
-    return r.json();
-  }),
-  "arrow-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-right");
-    return r.json();
-  }),
-  "arrow-right2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-right2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-right2");
-    return r.json();
-  }),
-  "arrow-right3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-right3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-right3");
-    return r.json();
-  }),
-  "arrow-right4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-right4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-right4");
-    return r.json();
-  }),
-  "arrow-square-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-square-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-square-down");
-    return r.json();
-  }),
-  "arrow-square-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-square-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-square-left");
-    return r.json();
-  }),
-  "arrow-square-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-square-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-square-right");
-    return r.json();
-  }),
-  "arrow-square-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-square-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-square-up");
-    return r.json();
-  }),
-  "arrow-swap-horizontal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-swap-horizontal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-swap-horizontal");
-    return r.json();
-  }),
-  "arrow-swap-vertical": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-swap-vertical.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-swap-vertical");
-    return r.json();
-  }),
-  "arrow-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-up");
-    return r.json();
-  }),
-  "arrow-up2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-up2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-up2");
-    return r.json();
-  }),
-  "arrow-up3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-up3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-up3");
-    return r.json();
-  }),
-  "arrow-up4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/arrow-up4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: arrow-up4");
-    return r.json();
-  }),
-  "attach-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/attach-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: attach-circle");
-    return r.json();
-  }),
-  "attach-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/attach-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: attach-square");
-    return r.json();
-  }),
-  "audio-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/audio-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: audio-square");
-    return r.json();
-  }),
-  "augur-(rep)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/augur-(rep).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: augur-(rep)");
-    return r.json();
-  }),
-  "autobrightness": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/autobrightness.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: autobrightness");
-    return r.json();
-  }),
-  "autonio-(niox)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/autonio-(niox).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: autonio-(niox)");
-    return r.json();
-  }),
-  "avalanche-(avax)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/avalanche-(avax).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: avalanche-(avax)");
-    return r.json();
-  }),
-  "award": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/award.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: award");
-    return r.json();
-  }),
-  "back-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/back-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: back-square");
-    return r.json();
-  }),
-  "backward-10-seconds": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/backward-10-seconds.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: backward-10-seconds");
-    return r.json();
-  }),
-  "backward-15-seconds": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/backward-15-seconds.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: backward-15-seconds");
-    return r.json();
-  }),
-  "backward-5-seconds": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/backward-5-seconds.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: backward-5-seconds");
-    return r.json();
-  }),
-  "backward-item": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/backward-item.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: backward-item");
-    return r.json();
-  }),
-  "backward": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/backward.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: backward");
-    return r.json();
-  }),
-  "bag-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag-2");
-    return r.json();
-  }),
-  "bag-cross-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag-cross-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag-cross-2");
-    return r.json();
-  }),
-  "bag-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag-cross");
-    return r.json();
-  }),
-  "bag-happy": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag-happy.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag-happy");
-    return r.json();
-  }),
-  "bag-tick-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag-tick-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag-tick-2");
-    return r.json();
-  }),
-  "bag-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag-tick");
-    return r.json();
-  }),
-  "bag-timer": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag-timer.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag-timer");
-    return r.json();
-  }),
-  "bag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bag");
-    return r.json();
-  }),
-  "bank": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bank.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bank");
-    return r.json();
-  }),
-  "barcode": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/barcode.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: barcode");
-    return r.json();
-  }),
-  "battery-23full": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/battery-23full.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: battery-23full");
-    return r.json();
-  }),
-  "battery-charging": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/battery-charging.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: battery-charging");
-    return r.json();
-  }),
-  "battery-disable": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/battery-disable.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: battery-disable");
-    return r.json();
-  }),
-  "battery-empty-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/battery-empty-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: battery-empty-2");
-    return r.json();
-  }),
-  "battery-empty": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/battery-empty.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: battery-empty");
-    return r.json();
-  }),
-  "battery-full": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/battery-full.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: battery-full");
-    return r.json();
-  }),
-  "be": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/be.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: be");
-    return r.json();
-  }),
-  "bezier": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bezier.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bezier");
-    return r.json();
-  }),
-  "bill": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bill.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bill");
-    return r.json();
-  }),
-  "binance-coin-(bnb)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/binance-coin-(bnb).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: binance-coin-(bnb)");
-    return r.json();
-  }),
-  "binance-usd-(busd)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/binance-usd-(busd).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: binance-usd-(busd)");
-    return r.json();
-  }),
-  "bitcoin-(btc)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bitcoin-(btc).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bitcoin-(btc)");
-    return r.json();
-  }),
-  "bitcoin-card": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bitcoin-card.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bitcoin-card");
-    return r.json();
-  }),
-  "bitcoin-convert": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bitcoin-convert.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bitcoin-convert");
-    return r.json();
-  }),
-  "bitcoin-refresh": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bitcoin-refresh.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bitcoin-refresh");
-    return r.json();
-  }),
-  "blend-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/blend-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: blend-2");
-    return r.json();
-  }),
-  "blend": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/blend.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: blend");
-    return r.json();
-  }),
-  "blogger": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/blogger.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: blogger");
-    return r.json();
-  }),
-  "bluetooth-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bluetooth-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bluetooth-2");
-    return r.json();
-  }),
-  "bluetooth-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bluetooth-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bluetooth-circle");
-    return r.json();
-  }),
-  "bluetooth-rectangle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bluetooth-rectangle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bluetooth-rectangle");
-    return r.json();
-  }),
-  "bluetooth": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bluetooth.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bluetooth");
-    return r.json();
-  }),
-  "blur": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/blur.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: blur");
-    return r.json();
-  }),
-  "book-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/book-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: book-2");
-    return r.json();
-  }),
-  "book": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/book.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: book");
-    return r.json();
-  }),
-  "bookmark-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bookmark-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bookmark-2");
-    return r.json();
-  }),
-  "bookmark": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bookmark.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bookmark");
-    return r.json();
-  }),
-  "bootstrap": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bootstrap.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bootstrap");
-    return r.json();
-  }),
-  "box-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/box-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: box-2");
-    return r.json();
-  }),
-  "box-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/box-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: box-add");
-    return r.json();
-  }),
-  "box-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/box-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: box-remove");
-    return r.json();
-  }),
-  "box-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/box-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: box-search");
-    return r.json();
-  }),
-  "box-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/box-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: box-tick");
-    return r.json();
-  }),
-  "box-time": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/box-time.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: box-time");
-    return r.json();
-  }),
-  "box": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/box.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: box");
-    return r.json();
-  }),
-  "briefcase": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/briefcase.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: briefcase");
-    return r.json();
-  }),
-  "brifecase-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/brifecase-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: brifecase-cross");
-    return r.json();
-  }),
-  "brifecase-timer": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/brifecase-timer.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: brifecase-timer");
-    return r.json();
-  }),
-  "broom": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/broom.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: broom");
-    return r.json();
-  }),
-  "brush-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/brush-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: brush-2");
-    return r.json();
-  }),
-  "brush-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/brush-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: brush-3");
-    return r.json();
-  }),
-  "brush-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/brush-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: brush-4");
-    return r.json();
-  }),
-  "brush": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/brush.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: brush");
-    return r.json();
-  }),
-  "bubble": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bubble.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bubble");
-    return r.json();
-  }),
-  "bucket-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bucket-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bucket-circle");
-    return r.json();
-  }),
-  "bucket-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bucket-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bucket-square");
-    return r.json();
-  }),
-  "building-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/building-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: building-3");
-    return r.json();
-  }),
-  "building-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/building-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: building-4");
-    return r.json();
-  }),
-  "building": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/building.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: building");
-    return r.json();
-  }),
-  "buildings-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/buildings-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: buildings-2");
-    return r.json();
-  }),
-  "buildings": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/buildings.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: buildings");
-    return r.json();
-  }),
-  "bus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/bus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: bus");
-    return r.json();
-  }),
-  "buy-crypto": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/buy-crypto.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: buy-crypto");
-    return r.json();
-  }),
-  "cake": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cake.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cake");
-    return r.json();
-  }),
-  "calculator": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calculator.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calculator");
-    return r.json();
-  }),
-  "calendar-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-2");
-    return r.json();
-  }),
-  "calendar-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-3");
-    return r.json();
-  }),
-  "calendar-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-add");
-    return r.json();
-  }),
-  "calendar-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-circle");
-    return r.json();
-  }),
-  "calendar-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-edit");
-    return r.json();
-  }),
-  "calendar-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-remove");
-    return r.json();
-  }),
-  "calendar-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-search");
-    return r.json();
-  }),
-  "calendar-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar-tick");
-    return r.json();
-  }),
-  "calendar": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/calendar.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: calendar");
-    return r.json();
-  }),
-  "call-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-add");
-    return r.json();
-  }),
-  "call-calling": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-calling.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-calling");
-    return r.json();
-  }),
-  "call-incoming": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-incoming.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-incoming");
-    return r.json();
-  }),
-  "call-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-minus");
-    return r.json();
-  }),
-  "call-outgoing": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-outgoing.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-outgoing");
-    return r.json();
-  }),
-  "call-received": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-received.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-received");
-    return r.json();
-  }),
-  "call-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-remove");
-    return r.json();
-  }),
-  "call-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call-slash");
-    return r.json();
-  }),
-  "call": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/call.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: call");
-    return r.json();
-  }),
-  "camera-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/camera-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: camera-slash");
-    return r.json();
-  }),
-  "camera": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/camera.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: camera");
-    return r.json();
-  }),
-  "candle-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/candle-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: candle-2");
-    return r.json();
-  }),
-  "candle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/candle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: candle");
-    return r.json();
-  }),
-  "car": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/car.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: car");
-    return r.json();
-  }),
-  "card-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-add");
-    return r.json();
-  }),
-  "card-coin": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-coin.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-coin");
-    return r.json();
-  }),
-  "card-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-edit");
-    return r.json();
-  }),
-  "card-pos": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-pos.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-pos");
-    return r.json();
-  }),
-  "card-receive": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-receive.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-receive");
-    return r.json();
-  }),
-  "card-remove-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-remove-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-remove-2");
-    return r.json();
-  }),
-  "card-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-remove");
-    return r.json();
-  }),
-  "card-send": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-send.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-send");
-    return r.json();
-  }),
-  "card-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-slash");
-    return r.json();
-  }),
-  "card-tick-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-tick-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-tick-2");
-    return r.json();
-  }),
-  "card-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card-tick");
-    return r.json();
-  }),
-  "card": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/card.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: card");
-    return r.json();
-  }),
-  "cardano-(ada)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cardano-(ada).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cardano-(ada)");
-    return r.json();
-  }),
-  "cards": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cards.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cards");
-    return r.json();
-  }),
-  "category-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/category-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: category-2");
-    return r.json();
-  }),
-  "cd": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cd.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cd");
-    return r.json();
-  }),
-  "celo-(celo)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/celo-(celo).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: celo-(celo)");
-    return r.json();
-  }),
-  "celsius-(cel)-": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/celsius-(cel)-.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: celsius-(cel)-");
-    return r.json();
-  }),
-  "chainlink-(link)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chainlink-(link).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chainlink-(link)");
-    return r.json();
-  }),
-  "chart-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chart-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chart-2");
-    return r.json();
-  }),
-  "chart-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chart-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chart-3");
-    return r.json();
-  }),
-  "chart-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chart-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chart-4");
-    return r.json();
-  }),
-  "chart-failure": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chart-failure.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chart-failure");
-    return r.json();
-  }),
-  "chart-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chart-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chart-square");
-    return r.json();
-  }),
-  "chart-success": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chart-success.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chart-success");
-    return r.json();
-  }),
-  "chart": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chart.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chart");
-    return r.json();
-  }),
-  "check": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/check.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: check");
-    return r.json();
-  }),
-  "chrome": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/chrome.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: chrome");
-    return r.json();
-  }),
-  "civic-cvc": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/civic-cvc.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: civic-cvc");
-    return r.json();
-  }),
-  "clipboard-close": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/clipboard-close.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: clipboard-close");
-    return r.json();
-  }),
-  "clipboard-export": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/clipboard-export.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: clipboard-export");
-    return r.json();
-  }),
-  "clipboard-import": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/clipboard-import.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: clipboard-import");
-    return r.json();
-  }),
-  "clipboard-text": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/clipboard-text.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: clipboard-text");
-    return r.json();
-  }),
-  "clipboard-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/clipboard-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: clipboard-tick");
-    return r.json();
-  }),
-  "clipboard": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/clipboard.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: clipboard");
-    return r.json();
-  }),
-  "clock": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/clock.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: clock");
-    return r.json();
-  }),
-  "close-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/close-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: close-circle");
-    return r.json();
-  }),
-  "close-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/close-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: close-square");
-    return r.json();
-  }),
-  "cloud-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-add");
-    return r.json();
-  }),
-  "cloud-change": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-change.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-change");
-    return r.json();
-  }),
-  "cloud-connection": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-connection.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-connection");
-    return r.json();
-  }),
-  "cloud-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-cross");
-    return r.json();
-  }),
-  "cloud-drizzle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-drizzle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-drizzle");
-    return r.json();
-  }),
-  "cloud-fog": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-fog.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-fog");
-    return r.json();
-  }),
-  "cloud-lightning": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-lightning.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-lightning");
-    return r.json();
-  }),
-  "cloud-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-minus");
-    return r.json();
-  }),
-  "cloud-notif": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-notif.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-notif");
-    return r.json();
-  }),
-  "cloud-plus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-plus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-plus");
-    return r.json();
-  }),
-  "cloud-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-remove");
-    return r.json();
-  }),
-  "cloud-snow": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-snow.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-snow");
-    return r.json();
-  }),
-  "cloud-sunny": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud-sunny.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud-sunny");
-    return r.json();
-  }),
-  "cloud": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cloud.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cloud");
-    return r.json();
-  }),
-  "code-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/code-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: code-2");
-    return r.json();
-  }),
-  "code-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/code-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: code-circle");
-    return r.json();
-  }),
-  "code": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/code.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: code");
-    return r.json();
-  }),
-  "coin-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/coin-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: coin-2");
-    return r.json();
-  }),
-  "coin": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/coin.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: coin");
-    return r.json();
-  }),
-  "color-swatch": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/color-swatch.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: color-swatch");
-    return r.json();
-  }),
-  "colorfilter": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/colorfilter.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: colorfilter");
-    return r.json();
-  }),
-  "colors-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/colors-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: colors-square");
-    return r.json();
-  }),
-  "command-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/command-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: command-square");
-    return r.json();
-  }),
-  "command": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/command.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: command");
-    return r.json();
-  }),
-  "component": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/component.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: component");
-    return r.json();
-  }),
-  "computing": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/computing.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: computing");
-    return r.json();
-  }),
-  "convert-3d-cube": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/convert-3d-cube.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: convert-3d-cube");
-    return r.json();
-  }),
-  "convert": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/convert.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: convert");
-    return r.json();
-  }),
-  "convertshape-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/convertshape-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: convertshape-2");
-    return r.json();
-  }),
-  "convertshape": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/convertshape.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: convertshape");
-    return r.json();
-  }),
-  "copy-success": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/copy-success.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: copy-success");
-    return r.json();
-  }),
-  "copy": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/copy.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: copy");
-    return r.json();
-  }),
-  "copyright": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/copyright.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: copyright");
-    return r.json();
-  }),
-  "courthouse": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/courthouse.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: courthouse");
-    return r.json();
-  }),
-  "cpu-charge": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cpu-charge.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cpu-charge");
-    return r.json();
-  }),
-  "cpu-setting": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cpu-setting.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cpu-setting");
-    return r.json();
-  }),
-  "cpu": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cpu.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cpu");
-    return r.json();
-  }),
-  "creative-commons": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/creative-commons.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: creative-commons");
-    return r.json();
-  }),
-  "crop": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/crop.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: crop");
-    return r.json();
-  }),
-  "crown-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/crown-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: crown-2");
-    return r.json();
-  }),
-  "crown": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/crown.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: crown");
-    return r.json();
-  }),
-  "cup": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/cup.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: cup");
-    return r.json();
-  }),
-  "dai-(dai)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dai-(dai).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dai-(dai)");
-    return r.json();
-  }),
-  "danger": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/danger.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: danger");
-    return r.json();
-  }),
-  "dash-dash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dash-dash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dash-dash");
-    return r.json();
-  }),
-  "data-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/data-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: data-2");
-    return r.json();
-  }),
-  "data": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/data.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: data");
-    return r.json();
-  }),
-  "decred-(dcr)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/decred-(dcr).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: decred-(dcr)");
-    return r.json();
-  }),
-  "dent-crypto-company": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dent-crypto-company.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dent-crypto-company");
-    return r.json();
-  }),
-  "designtools": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/designtools.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: designtools");
-    return r.json();
-  }),
-  "device-message": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/device-message.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: device-message");
-    return r.json();
-  }),
-  "devices": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/devices.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: devices");
-    return r.json();
-  }),
-  "diagram": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/diagram.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: diagram");
-    return r.json();
-  }),
-  "diamonds": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/diamonds.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: diamonds");
-    return r.json();
-  }),
-  "direct-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-down");
-    return r.json();
-  }),
-  "direct-inbox": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-inbox.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-inbox");
-    return r.json();
-  }),
-  "direct-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-left");
-    return r.json();
-  }),
-  "direct-normal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-normal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-normal");
-    return r.json();
-  }),
-  "direct-notification": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-notification.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-notification");
-    return r.json();
-  }),
-  "direct-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-right");
-    return r.json();
-  }),
-  "direct-send": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-send.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-send");
-    return r.json();
-  }),
-  "direct-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct-up");
-    return r.json();
-  }),
-  "direct": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/direct.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: direct");
-    return r.json();
-  }),
-  "directbox-default": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/directbox-default.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: directbox-default");
-    return r.json();
-  }),
-  "directbox-notif": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/directbox-notif.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: directbox-notif");
-    return r.json();
-  }),
-  "directbox-receive": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/directbox-receive.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: directbox-receive");
-    return r.json();
-  }),
-  "directbox-send": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/directbox-send.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: directbox-send");
-    return r.json();
-  }),
-  "discount-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/discount-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: discount-circle");
-    return r.json();
-  }),
-  "discount-shape": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/discount-shape.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: discount-shape");
-    return r.json();
-  }),
-  "discover": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/discover.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: discover");
-    return r.json();
-  }),
-  "dislike": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dislike.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dislike");
-    return r.json();
-  }),
-  "document-cloud": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-cloud.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-cloud");
-    return r.json();
-  }),
-  "document-code-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-code-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-code-2");
-    return r.json();
-  }),
-  "document-code": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-code.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-code");
-    return r.json();
-  }),
-  "document-copy": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-copy.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-copy");
-    return r.json();
-  }),
-  "document-download": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-download.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-download");
-    return r.json();
-  }),
-  "document-favorite": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-favorite.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-favorite");
-    return r.json();
-  }),
-  "document-filter": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-filter.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-filter");
-    return r.json();
-  }),
-  "document-forward": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-forward.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-forward");
-    return r.json();
-  }),
-  "document-like": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-like.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-like");
-    return r.json();
-  }),
-  "document-normal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-normal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-normal");
-    return r.json();
-  }),
-  "document-previous": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-previous.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-previous");
-    return r.json();
-  }),
-  "document-sketch": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-sketch.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-sketch");
-    return r.json();
-  }),
-  "document-text-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-text-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-text-2");
-    return r.json();
-  }),
-  "document-text": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-text.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-text");
-    return r.json();
-  }),
-  "document-upload": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document-upload.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document-upload");
-    return r.json();
-  }),
-  "document": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/document.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: document");
-    return r.json();
-  }),
-  "dollar-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dollar-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dollar-circle");
-    return r.json();
-  }),
-  "dollar-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dollar-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dollar-square");
-    return r.json();
-  }),
-  "dribbble": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dribbble.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dribbble");
-    return r.json();
-  }),
-  "driver-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/driver-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: driver-2");
-    return r.json();
-  }),
-  "driver-refresh": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/driver-refresh.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: driver-refresh");
-    return r.json();
-  }),
-  "driver": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/driver.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: driver");
-    return r.json();
-  }),
-  "driving": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/driving.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: driving");
-    return r.json();
-  }),
-  "drop": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/drop.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: drop");
-    return r.json();
-  }),
-  "dropbox": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/dropbox.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: dropbox");
-    return r.json();
-  }),
-  "edit-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/edit-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: edit-2");
-    return r.json();
-  }),
-  "edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: edit");
-    return r.json();
-  }),
-  "educare-(ekt)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/educare-(ekt).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: educare-(ekt)");
-    return r.json();
-  }),
-  "electricity": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/electricity.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: electricity");
-    return r.json();
-  }),
-  "element-1": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/element-1.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: element-1");
-    return r.json();
-  }),
-  "element-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/element-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: element-2");
-    return r.json();
-  }),
-  "element-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/element-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: element-3");
-    return r.json();
-  }),
-  "element-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/element-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: element-4");
-    return r.json();
-  }),
-  "element-equal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/element-equal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: element-equal");
-    return r.json();
-  }),
-  "element-plus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/element-plus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: element-plus");
-    return r.json();
-  }),
-  "emercoin-(emc)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/emercoin-(emc).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: emercoin-(emc)");
-    return r.json();
-  }),
-  "emoji-happy": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/emoji-happy.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: emoji-happy");
-    return r.json();
-  }),
-  "emoji-normal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/emoji-normal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: emoji-normal");
-    return r.json();
-  }),
-  "emoji-sad": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/emoji-sad.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: emoji-sad");
-    return r.json();
-  }),
-  "empty-wallet-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/empty-wallet-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: empty-wallet-add");
-    return r.json();
-  }),
-  "empty-wallet-change": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/empty-wallet-change.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: empty-wallet-change");
-    return r.json();
-  }),
-  "empty-wallet-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/empty-wallet-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: empty-wallet-remove");
-    return r.json();
-  }),
-  "empty-wallet-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/empty-wallet-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: empty-wallet-tick");
-    return r.json();
-  }),
-  "empty-wallet-time": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/empty-wallet-time.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: empty-wallet-time");
-    return r.json();
-  }),
-  "empty-wallet": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/empty-wallet.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: empty-wallet");
-    return r.json();
-  }),
-  "enjin-coin-(enj)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/enjin-coin-(enj).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: enjin-coin-(enj)");
-    return r.json();
-  }),
-  "eos-(eos)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/eos-(eos).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: eos-(eos)");
-    return r.json();
-  }),
-  "eraser": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/eraser.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: eraser");
-    return r.json();
-  }),
-  "ethereum-(eth)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ethereum-(eth).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ethereum-(eth)");
-    return r.json();
-  }),
-  "ethereum-classic-(etc)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ethereum-classic-(etc).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ethereum-classic-(etc)");
-    return r.json();
-  }),
-  "export-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/export-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: export-2");
-    return r.json();
-  }),
-  "export-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/export-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: export-3");
-    return r.json();
-  }),
-  "export-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/export-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: export-4");
-    return r.json();
-  }),
-  "export": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/export.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: export");
-    return r.json();
-  }),
-  "external-drive": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/external-drive.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: external-drive");
-    return r.json();
-  }),
-  "eye-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/eye-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: eye-slash");
-    return r.json();
-  }),
-  "eye": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/eye.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: eye");
-    return r.json();
-  }),
-  "facebook": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/facebook.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: facebook");
-    return r.json();
-  }),
-  "fast-truck": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/fast-truck.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: fast-truck");
-    return r.json();
-  }),
-  "fatrows": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/fatrows.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: fatrows");
-    return r.json();
-  }),
-  "favorite-chart": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/favorite-chart.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: favorite-chart");
-    return r.json();
-  }),
-  "figma-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/figma-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: figma-2");
-    return r.json();
-  }),
-  "figma": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/figma.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: figma");
-    return r.json();
-  }),
-  "filter-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/filter-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: filter-add");
-    return r.json();
-  }),
-  "filter-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/filter-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: filter-edit");
-    return r.json();
-  }),
-  "filter-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/filter-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: filter-remove");
-    return r.json();
-  }),
-  "filter-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/filter-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: filter-search");
-    return r.json();
-  }),
-  "filter-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/filter-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: filter-square");
-    return r.json();
-  }),
-  "filter-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/filter-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: filter-tick");
-    return r.json();
-  }),
-  "filter": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/filter.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: filter");
-    return r.json();
-  }),
-  "finger-cricle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/finger-cricle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: finger-cricle");
-    return r.json();
-  }),
-  "finger-scan": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/finger-scan.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: finger-scan");
-    return r.json();
-  }),
-  "firstline": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/firstline.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: firstline");
-    return r.json();
-  }),
-  "flag-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/flag-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: flag-2");
-    return r.json();
-  }),
-  "flag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/flag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: flag");
-    return r.json();
-  }),
-  "flash-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/flash-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: flash-circle");
-    return r.json();
-  }),
-  "flash-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/flash-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: flash-slash");
-    return r.json();
-  }),
-  "flash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/flash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: flash");
-    return r.json();
-  }),
-  "folder-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-2");
-    return r.json();
-  }),
-  "folder-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-add");
-    return r.json();
-  }),
-  "folder-cloud": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-cloud.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-cloud");
-    return r.json();
-  }),
-  "folder-connection": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-connection.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-connection");
-    return r.json();
-  }),
-  "folder-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-cross");
-    return r.json();
-  }),
-  "folder-favorite": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-favorite.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-favorite");
-    return r.json();
-  }),
-  "folder-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-minus");
-    return r.json();
-  }),
-  "folder-open": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder-open.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder-open");
-    return r.json();
-  }),
-  "folder": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/folder.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: folder");
-    return r.json();
-  }),
-  "format-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/format-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: format-circle");
-    return r.json();
-  }),
-  "format-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/format-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: format-square");
-    return r.json();
-  }),
-  "forward-10-seconds": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/forward-10-seconds.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: forward-10-seconds");
-    return r.json();
-  }),
-  "forward-15-seconds": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/forward-15-seconds.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: forward-15-seconds");
-    return r.json();
-  }),
-  "forward-5-seconds": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/forward-5-seconds.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: forward-5-seconds");
-    return r.json();
-  }),
-  "forward-item": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/forward-item.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: forward-item");
-    return r.json();
-  }),
-  "forward-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/forward-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: forward-square");
-    return r.json();
-  }),
-  "forward": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/forward.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: forward");
-    return r.json();
-  }),
-  "framer": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/framer.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: framer");
-    return r.json();
-  }),
-  "ftx-token-(ftt)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ftx-token-(ftt).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ftx-token-(ftt)");
-    return r.json();
-  }),
-  "gallery-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-add");
-    return r.json();
-  }),
-  "gallery-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-edit");
-    return r.json();
-  }),
-  "gallery-export": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-export.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-export");
-    return r.json();
-  }),
-  "gallery-favorite": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-favorite.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-favorite");
-    return r.json();
-  }),
-  "gallery-import": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-import.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-import");
-    return r.json();
-  }),
-  "gallery-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-remove");
-    return r.json();
-  }),
-  "gallery-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-slash");
-    return r.json();
-  }),
-  "gallery-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery-tick");
-    return r.json();
-  }),
-  "gallery": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gallery.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gallery");
-    return r.json();
-  }),
-  "game": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/game.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: game");
-    return r.json();
-  }),
-  "gameboy": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gameboy.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gameboy");
-    return r.json();
-  }),
-  "gas-station": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gas-station.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gas-station");
-    return r.json();
-  }),
-  "gemini-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gemini-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gemini-2");
-    return r.json();
-  }),
-  "gemini": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gemini.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gemini");
-    return r.json();
-  }),
-  "ghost": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ghost.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ghost");
-    return r.json();
-  }),
-  "gift": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gift.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gift");
-    return r.json();
-  }),
-  "glass": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/glass.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: glass");
-    return r.json();
-  }),
-  "global-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/global-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: global-edit");
-    return r.json();
-  }),
-  "global-refresh": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/global-refresh.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: global-refresh");
-    return r.json();
-  }),
-  "global-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/global-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: global-search");
-    return r.json();
-  }),
-  "global": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/global.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: global");
-    return r.json();
-  }),
-  "google-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/google-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: google-2");
-    return r.json();
-  }),
-  "google-play": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/google-play.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: google-play");
-    return r.json();
-  }),
-  "google": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/google.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: google");
-    return r.json();
-  }),
-  "gps-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gps-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gps-slash");
-    return r.json();
-  }),
-  "gps": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/gps.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: gps");
-    return r.json();
-  }),
-  "grammerly": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grammerly.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grammerly");
-    return r.json();
-  }),
-  "graph": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/graph.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: graph");
-    return r.json();
-  }),
-  "grid-1": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-1.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-1");
-    return r.json();
-  }),
-  "grid-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-2");
-    return r.json();
-  }),
-  "grid-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-3");
-    return r.json();
-  }),
-  "grid-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-4");
-    return r.json();
-  }),
-  "grid-5": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-5.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-5");
-    return r.json();
-  }),
-  "grid-6": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-6.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-6");
-    return r.json();
-  }),
-  "grid-7": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-7.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-7");
-    return r.json();
-  }),
-  "grid-8": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-8.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-8");
-    return r.json();
-  }),
-  "grid-9": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-9.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-9");
-    return r.json();
-  }),
-  "grid-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-edit");
-    return r.json();
-  }),
-  "grid-eraser": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-eraser.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-eraser");
-    return r.json();
-  }),
-  "grid-lock": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/grid-lock.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: grid-lock");
-    return r.json();
-  }),
-  "group-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/group-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: group-2");
-    return r.json();
-  }),
-  "group-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/group-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: group-3");
-    return r.json();
-  }),
-  "group": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/group.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: group");
-    return r.json();
-  }),
-  "happyemoji": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/happyemoji.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: happyemoji");
-    return r.json();
-  }),
-  "harmony-(one)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/harmony-(one).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: harmony-(one)");
-    return r.json();
-  }),
-  "hashtag-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hashtag-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hashtag-down");
-    return r.json();
-  }),
-  "hashtag-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hashtag-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hashtag-up");
-    return r.json();
-  }),
-  "hashtag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hashtag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hashtag");
-    return r.json();
-  }),
-  "headphone": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/headphone.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: headphone");
-    return r.json();
-  }),
-  "headphones": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/headphones.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: headphones");
-    return r.json();
-  }),
-  "heart-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart-add");
-    return r.json();
-  }),
-  "heart-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart-circle");
-    return r.json();
-  }),
-  "heart-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart-edit");
-    return r.json();
-  }),
-  "heart-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart-remove");
-    return r.json();
-  }),
-  "heart-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart-search");
-    return r.json();
-  }),
-  "heart-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart-slash");
-    return r.json();
-  }),
-  "heart-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart-tick");
-    return r.json();
-  }),
-  "heart": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/heart.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: heart");
-    return r.json();
-  }),
-  "hedera-hashgraph-(hbar)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hedera-hashgraph-(hbar).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hedera-hashgraph-(hbar)");
-    return r.json();
-  }),
-  "hex-(hex)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hex-(hex).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hex-(hex)");
-    return r.json();
-  }),
-  "hierarchy-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hierarchy-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hierarchy-2");
-    return r.json();
-  }),
-  "hierarchy-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hierarchy-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hierarchy-3");
-    return r.json();
-  }),
-  "hierarchy-square-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hierarchy-square-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hierarchy-square-2");
-    return r.json();
-  }),
-  "hierarchy-square-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hierarchy-square-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hierarchy-square-3");
-    return r.json();
-  }),
-  "hierarchy-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hierarchy-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hierarchy-square");
-    return r.json();
-  }),
-  "hierarchy": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hierarchy.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hierarchy");
-    return r.json();
-  }),
-  "home-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/home-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: home-2");
-    return r.json();
-  }),
-  "home-hashtag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/home-hashtag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: home-hashtag");
-    return r.json();
-  }),
-  "home-trend-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/home-trend-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: home-trend-down");
-    return r.json();
-  }),
-  "home-trend-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/home-trend-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: home-trend-up");
-    return r.json();
-  }),
-  "home-wifi": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/home-wifi.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: home-wifi");
-    return r.json();
-  }),
-  "home": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/home.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: home");
-    return r.json();
-  }),
-  "hospital": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/hospital.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: hospital");
-    return r.json();
-  }),
-  "house-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/house-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: house-2");
-    return r.json();
-  }),
-  "house": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/house.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: house");
-    return r.json();
-  }),
-  "html-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/html-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: html-3");
-    return r.json();
-  }),
-  "html-5": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/html-5.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: html-5");
-    return r.json();
-  }),
-  "huobi-token-(ht)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/huobi-token-(ht).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: huobi-token-(ht)");
-    return r.json();
-  }),
-  "icon-(icx)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/icon-(icx).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: icon-(icx)");
-    return r.json();
-  }),
-  "illustrator": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/illustrator.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: illustrator");
-    return r.json();
-  }),
-  "image": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/image.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: image");
-    return r.json();
-  }),
-  "import-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/import-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: import-2");
-    return r.json();
-  }),
-  "import-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/import-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: import-3");
-    return r.json();
-  }),
-  "import-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/import-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: import-4");
-    return r.json();
-  }),
-  "import": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/import.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: import");
-    return r.json();
-  }),
-  "info-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/info-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: info-circle");
-    return r.json();
-  }),
-  "information": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/information.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: information");
-    return r.json();
-  }),
-  "instagram": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/instagram.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: instagram");
-    return r.json();
-  }),
-  "iost-iost": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/iost-iost.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: iost-iost");
-    return r.json();
-  }),
-  "java-script": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/java-script.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: java-script");
-    return r.json();
-  }),
-  "js": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/js.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: js");
-    return r.json();
-  }),
-  "judge": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/judge.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: judge");
-    return r.json();
-  }),
-  "kanban": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/kanban.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: kanban");
-    return r.json();
-  }),
-  "key-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/key-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: key-square");
-    return r.json();
-  }),
-  "key": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/key.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: key");
-    return r.json();
-  }),
-  "keyboard-open": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/keyboard-open.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: keyboard-open");
-    return r.json();
-  }),
-  "keyboard": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/keyboard.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: keyboard");
-    return r.json();
-  }),
-  "kyber-network-(knc)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/kyber-network-(knc).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: kyber-network-(knc)");
-    return r.json();
-  }),
-  "lamp-charge": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lamp-charge.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lamp-charge");
-    return r.json();
-  }),
-  "lamp-on": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lamp-on.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lamp-on");
-    return r.json();
-  }),
-  "lamp-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lamp-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lamp-slash");
-    return r.json();
-  }),
-  "lamp": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lamp.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lamp");
-    return r.json();
-  }),
-  "language-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/language-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: language-circle");
-    return r.json();
-  }),
-  "language-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/language-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: language-square");
-    return r.json();
-  }),
-  "layer": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/layer.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: layer");
-    return r.json();
-  }),
-  "level": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/level.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: level");
-    return r.json();
-  }),
-  "lifebuoy": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lifebuoy.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lifebuoy");
-    return r.json();
-  }),
-  "like-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/like-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: like-2");
-    return r.json();
-  }),
-  "like-dislike": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/like-dislike.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: like-dislike");
-    return r.json();
-  }),
-  "like-shapes": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/like-shapes.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: like-shapes");
-    return r.json();
-  }),
-  "like-tag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/like-tag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: like-tag");
-    return r.json();
-  }),
-  "like": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/like.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: like");
-    return r.json();
-  }),
-  "link-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/link-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: link-2");
-    return r.json();
-  }),
-  "link-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/link-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: link-3");
-    return r.json();
-  }),
-  "link-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/link-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: link-4");
-    return r.json();
-  }),
-  "link-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/link-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: link-circle");
-    return r.json();
-  }),
-  "link-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/link-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: link-square");
-    return r.json();
-  }),
-  "link": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/link.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: link");
-    return r.json();
-  }),
-  "litecoin(ltc)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/litecoin(ltc).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: litecoin(ltc)");
-    return r.json();
-  }),
-  "location-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/location-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: location-add");
-    return r.json();
-  }),
-  "location-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/location-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: location-cross");
-    return r.json();
-  }),
-  "location-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/location-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: location-minus");
-    return r.json();
-  }),
-  "location-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/location-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: location-slash");
-    return r.json();
-  }),
-  "location-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/location-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: location-tick");
-    return r.json();
-  }),
-  "location": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/location.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: location");
-    return r.json();
-  }),
-  "lock-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lock-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lock-2");
-    return r.json();
-  }),
-  "lock-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lock-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lock-circle");
-    return r.json();
-  }),
-  "lock-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lock-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lock-slash");
-    return r.json();
-  }),
-  "lock": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lock.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lock");
-    return r.json();
-  }),
-  "login-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/login-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: login-2");
-    return r.json();
-  }),
-  "login": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/login.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: login");
-    return r.json();
-  }),
-  "logout-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/logout-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: logout-2");
-    return r.json();
-  }),
-  "logout": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/logout.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: logout");
-    return r.json();
-  }),
-  "lovely": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/lovely.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: lovely");
-    return r.json();
-  }),
-  "magic-star": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/magic-star.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: magic-star");
-    return r.json();
-  }),
-  "magicpen": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/magicpen.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: magicpen");
-    return r.json();
-  }),
-  "main-component": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/main-component.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: main-component");
-    return r.json();
-  }),
-  "maker-(mkr)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/maker-(mkr).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: maker-(mkr)");
-    return r.json();
-  }),
-  "man": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/man.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: man");
-    return r.json();
-  }),
-  "map-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/map-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: map-2");
-    return r.json();
-  }),
-  "map": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/map.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: map");
-    return r.json();
-  }),
-  "mask-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mask-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mask-2");
-    return r.json();
-  }),
-  "mask-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mask-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mask-3");
-    return r.json();
-  }),
-  "mask": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mask.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mask");
-    return r.json();
-  }),
-  "maximize-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/maximize-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: maximize-2");
-    return r.json();
-  }),
-  "maximize-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/maximize-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: maximize-3");
-    return r.json();
-  }),
-  "maximize-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/maximize-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: maximize-4");
-    return r.json();
-  }),
-  "maximize-5": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/maximize-5.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: maximize-5");
-    return r.json();
-  }),
-  "maximize-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/maximize-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: maximize-circle");
-    return r.json();
-  }),
-  "maximize": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/maximize.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: maximize");
-    return r.json();
-  }),
-  "medal-star": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/medal-star.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: medal-star");
-    return r.json();
-  }),
-  "medal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/medal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: medal");
-    return r.json();
-  }),
-  "menu-board": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/menu-board.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: menu-board");
-    return r.json();
-  }),
-  "menu": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/menu.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: menu");
-    return r.json();
-  }),
-  "message-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-2");
-    return r.json();
-  }),
-  "message-add-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-add-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-add-2");
-    return r.json();
-  }),
-  "message-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-add");
-    return r.json();
-  }),
-  "message-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-circle");
-    return r.json();
-  }),
-  "message-favorite": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-favorite.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-favorite");
-    return r.json();
-  }),
-  "message-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-minus");
-    return r.json();
-  }),
-  "message-notif": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-notif.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-notif");
-    return r.json();
-  }),
-  "message-programming": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-programming.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-programming");
-    return r.json();
-  }),
-  "message-question": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-question.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-question");
-    return r.json();
-  }),
-  "message-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-remove");
-    return r.json();
-  }),
-  "message-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-search");
-    return r.json();
-  }),
-  "message-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-square");
-    return r.json();
-  }),
-  "message-text-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-text-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-text-2");
-    return r.json();
-  }),
-  "message-text": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-text.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-text");
-    return r.json();
-  }),
-  "message-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-tick");
-    return r.json();
-  }),
-  "message-time": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message-time.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message-time");
-    return r.json();
-  }),
-  "message": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/message.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: message");
-    return r.json();
-  }),
-  "messages-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/messages-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: messages-2");
-    return r.json();
-  }),
-  "messages-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/messages-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: messages-3");
-    return r.json();
-  }),
-  "messages-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/messages-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: messages-4");
-    return r.json();
-  }),
-  "messages": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/messages.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: messages");
-    return r.json();
-  }),
-  "messenger": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/messenger.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: messenger");
-    return r.json();
-  }),
-  "microphone-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/microphone-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: microphone-2");
-    return r.json();
-  }),
-  "microphone-slash-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/microphone-slash-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: microphone-slash-2");
-    return r.json();
-  }),
-  "microphone-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/microphone-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: microphone-slash");
-    return r.json();
-  }),
-  "microphone": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/microphone.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: microphone");
-    return r.json();
-  }),
-  "microscope": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/microscope.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: microscope");
-    return r.json();
-  }),
-  "milk": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/milk.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: milk");
-    return r.json();
-  }),
-  "mini-music-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mini-music-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mini-music-square");
-    return r.json();
-  }),
-  "minus-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/minus-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: minus-circle");
-    return r.json();
-  }),
-  "minus-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/minus-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: minus-square");
-    return r.json();
-  }),
-  "minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: minus");
-    return r.json();
-  }),
-  "mirror": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mirror.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mirror");
-    return r.json();
-  }),
-  "mirroring-screen": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mirroring-screen.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mirroring-screen");
-    return r.json();
-  }),
-  "mobile-programming": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mobile-programming.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mobile-programming");
-    return r.json();
-  }),
-  "mobile": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mobile.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mobile");
-    return r.json();
-  }),
-  "monero-xmr": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/monero-xmr.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: monero-xmr");
-    return r.json();
-  }),
-  "money-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-2");
-    return r.json();
-  }),
-  "money-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-3");
-    return r.json();
-  }),
-  "money-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-4");
-    return r.json();
-  }),
-  "money-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-add");
-    return r.json();
-  }),
-  "money-change": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-change.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-change");
-    return r.json();
-  }),
-  "money-forbidden": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-forbidden.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-forbidden");
-    return r.json();
-  }),
-  "money-recive": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-recive.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-recive");
-    return r.json();
-  }),
-  "money-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-remove");
-    return r.json();
-  }),
-  "money-send": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-send.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-send");
-    return r.json();
-  }),
-  "money-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-tick");
-    return r.json();
-  }),
-  "money-time": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money-time.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money-time");
-    return r.json();
-  }),
-  "money": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/money.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: money");
-    return r.json();
-  }),
-  "moneys": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/moneys.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: moneys");
-    return r.json();
-  }),
-  "monitor-mobbile": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/monitor-mobbile.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: monitor-mobbile");
-    return r.json();
-  }),
-  "monitor-recorder": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/monitor-recorder.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: monitor-recorder");
-    return r.json();
-  }),
-  "monitor": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/monitor.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: monitor");
-    return r.json();
-  }),
-  "moon": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/moon.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: moon");
-    return r.json();
-  }),
-  "more-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/more-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: more-2");
-    return r.json();
-  }),
-  "more-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/more-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: more-circle");
-    return r.json();
-  }),
-  "more-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/more-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: more-square");
-    return r.json();
-  }),
-  "more": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/more.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: more");
-    return r.json();
-  }),
-  "mouse-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mouse-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mouse-circle");
-    return r.json();
-  }),
-  "mouse-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mouse-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mouse-square");
-    return r.json();
-  }),
-  "mouse": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/mouse.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: mouse");
-    return r.json();
-  }),
-  "music-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-circle");
-    return r.json();
-  }),
-  "music-dashboard": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-dashboard.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-dashboard");
-    return r.json();
-  }),
-  "music-filter": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-filter.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-filter");
-    return r.json();
-  }),
-  "music-library-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-library-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-library-2");
-    return r.json();
-  }),
-  "music-play": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-play.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-play");
-    return r.json();
-  }),
-  "music-playlist": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-playlist.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-playlist");
-    return r.json();
-  }),
-  "music-square-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-square-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-square-add");
-    return r.json();
-  }),
-  "music-square-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-square-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-square-remove");
-    return r.json();
-  }),
-  "music-square-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-square-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-square-search");
-    return r.json();
-  }),
-  "music-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music-square");
-    return r.json();
-  }),
-  "music": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/music.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: music");
-    return r.json();
-  }),
-  "musicnote": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/musicnote.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: musicnote");
-    return r.json();
-  }),
-  "nebulas-(nas)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/nebulas-(nas).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: nebulas-(nas)");
-    return r.json();
-  }),
-  "nem-(xem)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/nem-(xem).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: nem-(xem)");
-    return r.json();
-  }),
-  "nexo-(nexo)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/nexo-(nexo).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: nexo-(nexo)");
-    return r.json();
-  }),
-  "next": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/next.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: next");
-    return r.json();
-  }),
-  "note-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/note-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: note-2");
-    return r.json();
-  }),
-  "note-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/note-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: note-add");
-    return r.json();
-  }),
-  "note-favorite": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/note-favorite.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: note-favorite");
-    return r.json();
-  }),
-  "note-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/note-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: note-remove");
-    return r.json();
-  }),
-  "note-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/note-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: note-square");
-    return r.json();
-  }),
-  "note-text": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/note-text.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: note-text");
-    return r.json();
-  }),
-  "note": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/note.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: note");
-    return r.json();
-  }),
-  "notification-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/notification-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: notification-2");
-    return r.json();
-  }),
-  "notification-bing": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/notification-bing.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: notification-bing");
-    return r.json();
-  }),
-  "notification-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/notification-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: notification-circle");
-    return r.json();
-  }),
-  "notification-favorite": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/notification-favorite.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: notification-favorite");
-    return r.json();
-  }),
-  "notification-status": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/notification-status.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: notification-status");
-    return r.json();
-  }),
-  "notification": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/notification.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: notification");
-    return r.json();
-  }),
-  "ocean-protocol-(ocean)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ocean-protocol-(ocean).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ocean-protocol-(ocean)");
-    return r.json();
-  }),
-  "ok-app": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ok-app.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ok-app");
-    return r.json();
-  }),
-  "okb-(okb)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/okb-(okb).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: okb-(okb)");
-    return r.json();
-  }),
-  "omega-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/omega-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: omega-circle");
-    return r.json();
-  }),
-  "omega-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/omega-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: omega-square");
-    return r.json();
-  }),
-  "ontology-(ont)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ontology-(ont).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ontology-(ont)");
-    return r.json();
-  }),
-  "paintbucket": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/paintbucket.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: paintbucket");
-    return r.json();
-  }),
-  "paperclip-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/paperclip-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: paperclip-2");
-    return r.json();
-  }),
-  "paperclip": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/paperclip.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: paperclip");
-    return r.json();
-  }),
-  "paragraphspacing": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/paragraphspacing.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: paragraphspacing");
-    return r.json();
-  }),
-  "password-check": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/password-check.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: password-check");
-    return r.json();
-  }),
-  "path-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/path-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: path-2");
-    return r.json();
-  }),
-  "path-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/path-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: path-square");
-    return r.json();
-  }),
-  "path": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/path.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: path");
-    return r.json();
-  }),
-  "pause-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pause-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pause-circle");
-    return r.json();
-  }),
-  "pause": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pause.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pause");
-    return r.json();
-  }),
-  "paypal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/paypal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: paypal");
-    return r.json();
-  }),
-  "pen-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pen-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pen-add");
-    return r.json();
-  }),
-  "pen-close": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pen-close.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pen-close");
-    return r.json();
-  }),
-  "pen-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pen-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pen-remove");
-    return r.json();
-  }),
-  "pen-tool-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pen-tool-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pen-tool-2");
-    return r.json();
-  }),
-  "pen-tool": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pen-tool.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pen-tool");
-    return r.json();
-  }),
-  "people": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/people.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: people");
-    return r.json();
-  }),
-  "percentage-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/percentage-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: percentage-square");
-    return r.json();
-  }),
-  "personalcard": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/personalcard.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: personalcard");
-    return r.json();
-  }),
-  "pet": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/pet.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: pet");
-    return r.json();
-  }),
-  "photoshop": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/photoshop.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: photoshop");
-    return r.json();
-  }),
-  "play-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/play-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: play-add");
-    return r.json();
-  }),
-  "play-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/play-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: play-circle");
-    return r.json();
-  }),
-  "play-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/play-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: play-remove");
-    return r.json();
-  }),
-  "play": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/play.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: play");
-    return r.json();
-  }),
-  "polkadot-dot": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/polkadot-dot.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: polkadot-dot");
-    return r.json();
-  }),
-  "polygon-(matic)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/polygon-(matic).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: polygon-(matic)");
-    return r.json();
-  }),
-  "polyswarm-(nct)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/polyswarm-(nct).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: polyswarm-(nct)");
-    return r.json();
-  }),
-  "presention-chart": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/presention-chart.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: presention-chart");
-    return r.json();
-  }),
-  "previous": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/previous.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: previous");
-    return r.json();
-  }),
-  "printer-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/printer-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: printer-slash");
-    return r.json();
-  }),
-  "printer": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/printer.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: printer");
-    return r.json();
-  }),
-  "profile-2user": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/profile-2user.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: profile-2user");
-    return r.json();
-  }),
-  "profile-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/profile-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: profile-add");
-    return r.json();
-  }),
-  "profile-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/profile-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: profile-circle");
-    return r.json();
-  }),
-  "profile-delete": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/profile-delete.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: profile-delete");
-    return r.json();
-  }),
-  "profile-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/profile-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: profile-remove");
-    return r.json();
-  }),
-  "profile-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/profile-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: profile-tick");
-    return r.json();
-  }),
-  "profile": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/profile.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: profile");
-    return r.json();
-  }),
-  "programming-arrow": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/programming-arrow.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: programming-arrow");
-    return r.json();
-  }),
-  "programming-arrows": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/programming-arrows.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: programming-arrows");
-    return r.json();
-  }),
-  "python": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/python.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: python");
-    return r.json();
-  }),
-  "quant-(qnt)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/quant-(qnt).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: quant-(qnt)");
-    return r.json();
-  }),
-  "quote-down-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/quote-down-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: quote-down-circle");
-    return r.json();
-  }),
-  "quote-down-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/quote-down-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: quote-down-square");
-    return r.json();
-  }),
-  "quote-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/quote-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: quote-down");
-    return r.json();
-  }),
-  "quote-up-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/quote-up-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: quote-up-circle");
-    return r.json();
-  }),
-  "quote-up-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/quote-up-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: quote-up-square");
-    return r.json();
-  }),
-  "quote-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/quote-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: quote-up");
-    return r.json();
-  }),
-  "radar-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/radar-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: radar-2");
-    return r.json();
-  }),
-  "radar": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/radar.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: radar");
-    return r.json();
-  }),
-  "radio": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/radio.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: radio");
-    return r.json();
-  }),
-  "ram-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ram-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ram-2");
-    return r.json();
-  }),
-  "ram": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ram.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ram");
-    return r.json();
-  }),
-  "ranking": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ranking.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ranking");
-    return r.json();
-  }),
-  "receipt-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-2");
-    return r.json();
-  }),
-  "receipt-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-3");
-    return r.json();
-  }),
-  "receipt-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-4");
-    return r.json();
-  }),
-  "receipt-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-add");
-    return r.json();
-  }),
-  "receipt-discount": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-discount.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-discount");
-    return r.json();
-  }),
-  "receipt-disscount": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-disscount.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-disscount");
-    return r.json();
-  }),
-  "receipt-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-edit");
-    return r.json();
-  }),
-  "receipt-item": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-item.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-item");
-    return r.json();
-  }),
-  "receipt-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-minus");
-    return r.json();
-  }),
-  "receipt-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-search");
-    return r.json();
-  }),
-  "receipt-text": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt-text.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt-text");
-    return r.json();
-  }),
-  "receipt": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receipt.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receipt");
-    return r.json();
-  }),
-  "receive-square-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receive-square-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receive-square-2");
-    return r.json();
-  }),
-  "receive-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/receive-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: receive-square");
-    return r.json();
-  }),
-  "received": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/received.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: received");
-    return r.json();
-  }),
-  "record-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/record-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: record-circle");
-    return r.json();
-  }),
-  "record": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/record.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: record");
-    return r.json();
-  }),
-  "recovery-convert": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/recovery-convert.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: recovery-convert");
-    return r.json();
-  }),
-  "redo": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/redo.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: redo");
-    return r.json();
-  }),
-  "refresh-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/refresh-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: refresh-2");
-    return r.json();
-  }),
-  "refresh-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/refresh-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: refresh-circle");
-    return r.json();
-  }),
-  "refresh-left-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/refresh-left-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: refresh-left-square");
-    return r.json();
-  }),
-  "refresh-right-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/refresh-right-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: refresh-right-square");
-    return r.json();
-  }),
-  "refresh-square-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/refresh-square-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: refresh-square-2");
-    return r.json();
-  }),
-  "refresh": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/refresh.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: refresh");
-    return r.json();
-  }),
-  "repeat-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/repeat-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: repeat-circle");
-    return r.json();
-  }),
-  "repeat": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/repeat.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: repeat");
-    return r.json();
-  }),
-  "repeate-music": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/repeate-music.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: repeate-music");
-    return r.json();
-  }),
-  "repeate-one": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/repeate-one.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: repeate-one");
-    return r.json();
-  }),
-  "reserve": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/reserve.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: reserve");
-    return r.json();
-  }),
-  "rotate-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/rotate-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: rotate-left");
-    return r.json();
-  }),
-  "rotate-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/rotate-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: rotate-right");
-    return r.json();
-  }),
-  "routing": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/routing.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: routing");
-    return r.json();
-  }),
-  "row-horizontal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/row-horizontal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: row-horizontal");
-    return r.json();
-  }),
-  "row-vertical": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/row-vertical.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: row-vertical");
-    return r.json();
-  }),
-  "ruler&pen": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ruler&pen.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ruler&pen");
-    return r.json();
-  }),
-  "ruler": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ruler.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ruler");
-    return r.json();
-  }),
-  "safe-home": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/safe-home.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: safe-home");
-    return r.json();
-  }),
-  "sagittarius": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sagittarius.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sagittarius");
-    return r.json();
-  }),
-  "scan-barcode": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/scan-barcode.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: scan-barcode");
-    return r.json();
-  }),
-  "scan": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/scan.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: scan");
-    return r.json();
-  }),
-  "scanner": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/scanner.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: scanner");
-    return r.json();
-  }),
-  "scanning": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/scanning.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: scanning");
-    return r.json();
-  }),
-  "scissor": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/scissor.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: scissor");
-    return r.json();
-  }),
-  "screenmirroring": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/screenmirroring.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: screenmirroring");
-    return r.json();
-  }),
-  "scroll": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/scroll.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: scroll");
-    return r.json();
-  }),
-  "search-favorite-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-favorite-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-favorite-2");
-    return r.json();
-  }),
-  "search-favorite": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-favorite.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-favorite");
-    return r.json();
-  }),
-  "search-normal-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-normal-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-normal-2");
-    return r.json();
-  }),
-  "search-normal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-normal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-normal");
-    return r.json();
-  }),
-  "search-status-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-status-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-status-2");
-    return r.json();
-  }),
-  "search-status": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-status.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-status");
-    return r.json();
-  }),
-  "search-zoom-in-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-zoom-in-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-zoom-in-2");
-    return r.json();
-  }),
-  "search-zoom-in": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-zoom-in.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-zoom-in");
-    return r.json();
-  }),
-  "search-zoom-out-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-zoom-out-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-zoom-out-2");
-    return r.json();
-  }),
-  "search-zoom-out": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/search-zoom-out.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: search-zoom-out");
-    return r.json();
-  }),
-  "security-card": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/security-card.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: security-card");
-    return r.json();
-  }),
-  "security-safe": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/security-safe.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: security-safe");
-    return r.json();
-  }),
-  "security-time": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/security-time.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: security-time");
-    return r.json();
-  }),
-  "security-user": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/security-user.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: security-user");
-    return r.json();
-  }),
-  "security": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/security.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: security");
-    return r.json();
-  }),
-  "send-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/send-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: send-2");
-    return r.json();
-  }),
-  "send-sqaure-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/send-sqaure-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: send-sqaure-2");
-    return r.json();
-  }),
-  "send-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/send-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: send-square");
-    return r.json();
-  }),
-  "send": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/send.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: send");
-    return r.json();
-  }),
-  "setting-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/setting-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: setting-2");
-    return r.json();
-  }),
-  "setting-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/setting-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: setting-3");
-    return r.json();
-  }),
-  "setting-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/setting-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: setting-4");
-    return r.json();
-  }),
-  "setting-5": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/setting-5.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: setting-5");
-    return r.json();
-  }),
-  "setting": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/setting.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: setting");
-    return r.json();
-  }),
-  "settings": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/settings.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: settings");
-    return r.json();
-  }),
-  "shapes-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shapes-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shapes-2");
-    return r.json();
-  }),
-  "shapes": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shapes.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shapes");
-    return r.json();
-  }),
-  "share": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/share.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: share");
-    return r.json();
-  }),
-  "shield-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shield-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shield-cross");
-    return r.json();
-  }),
-  "shield-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shield-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shield-search");
-    return r.json();
-  }),
-  "shield-security": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shield-security.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shield-security");
-    return r.json();
-  }),
-  "shield-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shield-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shield-slash");
-    return r.json();
-  }),
-  "shield-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shield-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shield-tick");
-    return r.json();
-  }),
-  "shield": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shield.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shield");
-    return r.json();
-  }),
-  "ship": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ship.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ship");
-    return r.json();
-  }),
-  "shop-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shop-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shop-add");
-    return r.json();
-  }),
-  "shop-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shop-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shop-remove");
-    return r.json();
-  }),
-  "shop": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shop.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shop");
-    return r.json();
-  }),
-  "shopping-bag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shopping-bag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shopping-bag");
-    return r.json();
-  }),
-  "shopping-cart": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shopping-cart.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shopping-cart");
-    return r.json();
-  }),
-  "shutterstock": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/shutterstock.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: shutterstock");
-    return r.json();
-  }),
-  "siacoin-(sc)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/siacoin-(sc).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: siacoin-(sc)");
-    return r.json();
-  }),
-  "sidebar-bottom": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sidebar-bottom.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sidebar-bottom");
-    return r.json();
-  }),
-  "sidebar-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sidebar-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sidebar-left");
-    return r.json();
-  }),
-  "sidebar-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sidebar-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sidebar-right");
-    return r.json();
-  }),
-  "sidebar-top": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sidebar-top.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sidebar-top");
-    return r.json();
-  }),
-  "signpost": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/signpost.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: signpost");
-    return r.json();
-  }),
-  "simcard-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/simcard-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: simcard-2");
-    return r.json();
-  }),
-  "simcard-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/simcard-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: simcard-3");
-    return r.json();
-  }),
-  "simcard": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/simcard.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: simcard");
-    return r.json();
-  }),
-  "size": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/size.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: size");
-    return r.json();
-  }),
-  "slack": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/slack.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: slack");
-    return r.json();
-  }),
-  "slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: slash");
-    return r.json();
-  }),
-  "slider-horizontal-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/slider-horizontal-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: slider-horizontal-2");
-    return r.json();
-  }),
-  "slider-horizontal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/slider-horizontal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: slider-horizontal");
-    return r.json();
-  }),
-  "slider-vertical-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/slider-vertical-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: slider-vertical-2");
-    return r.json();
-  }),
-  "slider-vertical": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/slider-vertical.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: slider-vertical");
-    return r.json();
-  }),
-  "slider": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/slider.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: slider");
-    return r.json();
-  }),
-  "smallcaps": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/smallcaps.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: smallcaps");
-    return r.json();
-  }),
-  "smart-car": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/smart-car.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: smart-car");
-    return r.json();
-  }),
-  "smart-home": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/smart-home.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: smart-home");
-    return r.json();
-  }),
-  "smileys": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/smileys.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: smileys");
-    return r.json();
-  }),
-  "sms-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sms-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sms-edit");
-    return r.json();
-  }),
-  "sms-notification": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sms-notification.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sms-notification");
-    return r.json();
-  }),
-  "sms-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sms-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sms-search");
-    return r.json();
-  }),
-  "sms-star": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sms-star.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sms-star");
-    return r.json();
-  }),
-  "sms-tracking": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sms-tracking.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sms-tracking");
-    return r.json();
-  }),
-  "sms": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sms.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sms");
-    return r.json();
-  }),
-  "snapchat": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/snapchat.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: snapchat");
-    return r.json();
-  }),
-  "solana-(sol)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/solana-(sol).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: solana-(sol)");
-    return r.json();
-  }),
-  "sort": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sort.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sort");
-    return r.json();
-  }),
-  "sound": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sound.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sound");
-    return r.json();
-  }),
-  "speaker": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/speaker.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: speaker");
-    return r.json();
-  }),
-  "speedometer": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/speedometer.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: speedometer");
-    return r.json();
-  }),
-  "spotify": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/spotify.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: spotify");
-    return r.json();
-  }),
-  "stacks-(stx)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/stacks-(stx).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: stacks-(stx)");
-    return r.json();
-  }),
-  "star-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/star-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: star-2");
-    return r.json();
-  }),
-  "star-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/star-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: star-slash");
-    return r.json();
-  }),
-  "star": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/star.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: star");
-    return r.json();
-  }),
-  "status-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/status-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: status-up");
-    return r.json();
-  }),
-  "status": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/status.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: status");
-    return r.json();
-  }),
-  "stellar-(xlm)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/stellar-(xlm).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: stellar-(xlm)");
-    return r.json();
-  }),
-  "sticker": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sticker.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sticker");
-    return r.json();
-  }),
-  "stickynote": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/stickynote.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: stickynote");
-    return r.json();
-  }),
-  "stop-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/stop-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: stop-circle");
-    return r.json();
-  }),
-  "stop": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/stop.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: stop");
-    return r.json();
-  }),
-  "story": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/story.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: story");
-    return r.json();
-  }),
-  "strongbox-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/strongbox-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: strongbox-2");
-    return r.json();
-  }),
-  "strongbox": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/strongbox.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: strongbox");
-    return r.json();
-  }),
-  "subtitle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/subtitle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: subtitle");
-    return r.json();
-  }),
-  "sun-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sun-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sun-2");
-    return r.json();
-  }),
-  "sun-fog": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sun-fog.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sun-fog");
-    return r.json();
-  }),
-  "sun": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/sun.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: sun");
-    return r.json();
-  }),
-  "tag-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tag-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tag-2");
-    return r.json();
-  }),
-  "tag-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tag-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tag-cross");
-    return r.json();
-  }),
-  "tag-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tag-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tag-right");
-    return r.json();
-  }),
-  "tag-user": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tag-user.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tag-user");
-    return r.json();
-  }),
-  "tag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tag");
-    return r.json();
-  }),
-  "task-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/task-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: task-square");
-    return r.json();
-  }),
-  "task": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/task.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: task");
-    return r.json();
-  }),
-  "teacher": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/teacher.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: teacher");
-    return r.json();
-  }),
-  "tenx-(pay)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tenx-(pay).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tenx-(pay)");
-    return r.json();
-  }),
-  "tether-usdt": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tether-usdt.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tether-usdt");
-    return r.json();
-  }),
-  "text-block": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/text-block.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: text-block");
-    return r.json();
-  }),
-  "text-bold": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/text-bold.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: text-bold");
-    return r.json();
-  }),
-  "text-italic": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/text-italic.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: text-italic");
-    return r.json();
-  }),
-  "text-underline": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/text-underline.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: text-underline");
-    return r.json();
-  }),
-  "text": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/text.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: text");
-    return r.json();
-  }),
-  "textalign-center": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/textalign-center.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: textalign-center");
-    return r.json();
-  }),
-  "textalign-justifycenter": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/textalign-justifycenter.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: textalign-justifycenter");
-    return r.json();
-  }),
-  "textalign-justifyleft": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/textalign-justifyleft.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: textalign-justifyleft");
-    return r.json();
-  }),
-  "textalign-justifyright": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/textalign-justifyright.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: textalign-justifyright");
-    return r.json();
-  }),
-  "textalign-left": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/textalign-left.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: textalign-left");
-    return r.json();
-  }),
-  "textalign-right": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/textalign-right.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: textalign-right");
-    return r.json();
-  }),
-  "the-graph-(grt)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/the-graph-(grt).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: the-graph-(grt)");
-    return r.json();
-  }),
-  "theta-(theta)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/theta-(theta).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: theta-(theta)");
-    return r.json();
-  }),
-  "thorchain-(rune)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/thorchain-(rune).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: thorchain-(rune)");
-    return r.json();
-  }),
-  "tick-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tick-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tick-circle");
-    return r.json();
-  }),
-  "tick-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tick-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tick-square");
-    return r.json();
-  }),
-  "ticket-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ticket-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ticket-2");
-    return r.json();
-  }),
-  "ticket-discount": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ticket-discount.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ticket-discount");
-    return r.json();
-  }),
-  "ticket-expired": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ticket-expired.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ticket-expired");
-    return r.json();
-  }),
-  "ticket-star": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ticket-star.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ticket-star");
-    return r.json();
-  }),
-  "ticket": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ticket.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ticket");
-    return r.json();
-  }),
-  "timer-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/timer-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: timer-2");
-    return r.json();
-  }),
-  "timer-pause": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/timer-pause.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: timer-pause");
-    return r.json();
-  }),
-  "timer-start": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/timer-start.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: timer-start");
-    return r.json();
-  }),
-  "timer": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/timer.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: timer");
-    return r.json();
-  }),
-  "toggle-off": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/toggle-off.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: toggle-off");
-    return r.json();
-  }),
-  "toggle-on-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/toggle-on-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: toggle-on-circle");
-    return r.json();
-  }),
-  "toggle-on": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/toggle-on.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: toggle-on");
-    return r.json();
-  }),
-  "trade": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/trade.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: trade");
-    return r.json();
-  }),
-  "transaction-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/transaction-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: transaction-minus");
-    return r.json();
-  }),
-  "translate": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/translate.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: translate");
-    return r.json();
-  }),
-  "trash-bin": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/trash-bin.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: trash-bin");
-    return r.json();
-  }),
-  "tree": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/tree.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: tree");
-    return r.json();
-  }),
-  "trello": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/trello.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: trello");
-    return r.json();
-  }),
-  "trend-down": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/trend-down.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: trend-down");
-    return r.json();
-  }),
-  "trend-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/trend-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: trend-up");
-    return r.json();
-  }),
-  "triangle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/triangle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: triangle");
-    return r.json();
-  }),
-  "trontron-(trx)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/trontron-(trx).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: trontron-(trx)");
-    return r.json();
-  }),
-  "truck-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/truck-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: truck-remove");
-    return r.json();
-  }),
-  "truck-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/truck-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: truck-tick");
-    return r.json();
-  }),
-  "truck-time": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/truck-time.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: truck-time");
-    return r.json();
-  }),
-  "truck": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/truck.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: truck");
-    return r.json();
-  }),
-  "trush-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/trush-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: trush-square");
-    return r.json();
-  }),
-  "twitch": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/twitch.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: twitch");
-    return r.json();
-  }),
-  "ui8": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/ui8.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: ui8");
-    return r.json();
-  }),
-  "undo": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/undo.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: undo");
-    return r.json();
-  }),
-  "unlimited": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/unlimited.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: unlimited");
-    return r.json();
-  }),
-  "unlock": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/unlock.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: unlock");
-    return r.json();
-  }),
-  "usd-coin-(usdc)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/usd-coin-(usdc).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: usd-coin-(usdc)");
-    return r.json();
-  }),
-  "user-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-add");
-    return r.json();
-  }),
-  "user-circle-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-circle-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-circle-add");
-    return r.json();
-  }),
-  "user-edit": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-edit.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-edit");
-    return r.json();
-  }),
-  "user-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-minus");
-    return r.json();
-  }),
-  "user-octagon": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-octagon.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-octagon");
-    return r.json();
-  }),
-  "user-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-remove");
-    return r.json();
-  }),
-  "user-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-search");
-    return r.json();
-  }),
-  "user-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-square");
-    return r.json();
-  }),
-  "user-tag": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-tag.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-tag");
-    return r.json();
-  }),
-  "user-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user-tick");
-    return r.json();
-  }),
-  "user": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/user.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: user");
-    return r.json();
-  }),
-  "velas-(vlx)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/velas-(vlx).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: velas-(vlx)");
-    return r.json();
-  }),
-  "verify": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/verify.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: verify");
-    return r.json();
-  }),
-  "vibe-vibe": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/vibe-vibe.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: vibe-vibe");
-    return r.json();
-  }),
-  "video-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-add");
-    return r.json();
-  }),
-  "video-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-circle");
-    return r.json();
-  }),
-  "video-horizontal": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-horizontal.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-horizontal");
-    return r.json();
-  }),
-  "video-octagon": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-octagon.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-octagon");
-    return r.json();
-  }),
-  "video-play": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-play.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-play");
-    return r.json();
-  }),
-  "video-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-remove");
-    return r.json();
-  }),
-  "video-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-slash");
-    return r.json();
-  }),
-  "video-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-square");
-    return r.json();
-  }),
-  "video-tick": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-tick.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-tick");
-    return r.json();
-  }),
-  "video-time": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-time.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-time");
-    return r.json();
-  }),
-  "video-vertical": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video-vertical.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video-vertical");
-    return r.json();
-  }),
-  "video": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/video.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: video");
-    return r.json();
-  }),
-  "voice-circle": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/voice-circle.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: voice-circle");
-    return r.json();
-  }),
-  "voice-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/voice-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: voice-square");
-    return r.json();
-  }),
-  "volume-cross": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/volume-cross.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: volume-cross");
-    return r.json();
-  }),
-  "volume-high": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/volume-high.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: volume-high");
-    return r.json();
-  }),
-  "volume-low-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/volume-low-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: volume-low-2");
-    return r.json();
-  }),
-  "volume-low": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/volume-low.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: volume-low");
-    return r.json();
-  }),
-  "volume-mute": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/volume-mute.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: volume-mute");
-    return r.json();
-  }),
-  "volume-slash": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/volume-slash.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: volume-slash");
-    return r.json();
-  }),
-  "volume-up": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/volume-up.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: volume-up");
-    return r.json();
-  }),
-  "vuesax": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/vuesax.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: vuesax");
-    return r.json();
-  }),
-  "wallet-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-2");
-    return r.json();
-  }),
-  "wallet-3": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-3.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-3");
-    return r.json();
-  }),
-  "wallet-4": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-4.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-4");
-    return r.json();
-  }),
-  "wallet-add-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-add-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-add-2");
-    return r.json();
-  }),
-  "wallet-add": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-add.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-add");
-    return r.json();
-  }),
-  "wallet-check": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-check.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-check");
-    return r.json();
-  }),
-  "wallet-minus": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-minus.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-minus");
-    return r.json();
-  }),
-  "wallet-money": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-money.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-money");
-    return r.json();
-  }),
-  "wallet-remove": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-remove.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-remove");
-    return r.json();
-  }),
-  "wallet-search": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet-search.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet-search");
-    return r.json();
-  }),
-  "wallet": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wallet.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wallet");
-    return r.json();
-  }),
-  "wanchain-(wan)-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wanchain-(wan)-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wanchain-(wan)-2");
-    return r.json();
-  }),
-  "wanchain-(wan)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wanchain-(wan).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wanchain-(wan)");
-    return r.json();
-  }),
-  "warning-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/warning-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: warning-2");
-    return r.json();
-  }),
-  "watch-status": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/watch-status.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: watch-status");
-    return r.json();
-  }),
-  "watch": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/watch.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: watch");
-    return r.json();
-  }),
-  "weight": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/weight.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: weight");
-    return r.json();
-  }),
-  "whatsapp": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/whatsapp.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: whatsapp");
-    return r.json();
-  }),
-  "wifi-square": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wifi-square.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wifi-square");
-    return r.json();
-  }),
-  "wifi": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wifi.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wifi");
-    return r.json();
-  }),
-  "wind-2": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wind-2.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wind-2");
-    return r.json();
-  }),
-  "wind": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wind.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wind");
-    return r.json();
-  }),
-  "windows": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/windows.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: windows");
-    return r.json();
-  }),
-  "wing-wing": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/wing-wing.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: wing-wing");
-    return r.json();
-  }),
-  "woman": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/woman.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: woman");
-    return r.json();
-  }),
-  "xd": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/xd.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: xd");
-    return r.json();
-  }),
-  "xiaomi": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/xiaomi.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: xiaomi");
-    return r.json();
-  }),
-  "xrp-(xrp)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/xrp-(xrp).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: xrp-(xrp)");
-    return r.json();
-  }),
-  "youtube": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/youtube.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: youtube");
-    return r.json();
-  }),
-  "zel-(zel)": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/zel-(zel).json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: zel-(zel)");
-    return r.json();
-  }),
-  "zoom": () => fetch("https://icontree.cosmoscope.workers.dev/icon/use/zoom.json").then((r) => {
-    if (!r.ok) throw new Error("Failed to fetch icon: zoom");
-    return r.json();
-  })
+  "23": () => import("./23-OYYX3TBT.mjs"),
+  "24-support": () => import("./24-support-NO4YH4MH.mjs"),
+  "24": () => import("./24-3HYWR325.mjs"),
+  "25": () => import("./25-MRKBSEWL.mjs"),
+  "26": () => import("./26-EWF5AOCK.mjs"),
+  "27": () => import("./27-ENBMALTK.mjs"),
+  "3d-cube-scan": () => import("./3d-cube-scan-E6YFMENY.mjs"),
+  "3d-rotate": () => import("./3d-rotate-ZGF6TLYL.mjs"),
+  "3d-square": () => import("./3d-square-JQWIJGNF.mjs"),
+  "3dcube": () => import("./3dcube-2IVWDOUF.mjs"),
+  "3square": () => import("./3square-7POLMGUN.mjs"),
+  "Property 1=linear, Property 2=math": () => import("./Property 1=linear, Property 2=math-7T4F7TVN.mjs"),
+  "aave-(aave)": () => import("./aave-(aave)-QJSFO72V.mjs"),
+  "activity": () => import("./activity-PKMKAXOY.mjs"),
+  "add-circle": () => import("./add-circle-TCHCJ7QB.mjs"),
+  "add-square": () => import("./add-square-IQR43ZON.mjs"),
+  "add": () => import("./add-AYOOAVBK.mjs"),
+  "additem": () => import("./additem-JJXSHZEA.mjs"),
+  "airdrop": () => import("./airdrop-ATJS4JZS.mjs"),
+  "airplane-square": () => import("./airplane-square-QGA5M5GB.mjs"),
+  "airplane": () => import("./airplane-UZ5M2DGS.mjs"),
+  "airpod": () => import("./airpod-ORBSTMNL.mjs"),
+  "airpods": () => import("./airpods-KMTRJID7.mjs"),
+  "alarm": () => import("./alarm-OPNCYYCW.mjs"),
+  "align-bottom": () => import("./align-bottom-QW4KNMD4.mjs"),
+  "align-horizontally": () => import("./align-horizontally-Z7ZVO5B2.mjs"),
+  "align-left": () => import("./align-left-ACUJJOHP.mjs"),
+  "align-right": () => import("./align-right-PVPEZ3UV.mjs"),
+  "align-top-2": () => import("./align-top-2-XCAI5JAZ.mjs"),
+  "align-vertically": () => import("./align-vertically-6FSZDLGG.mjs"),
+  "android": () => import("./android-S2P36RKN.mjs"),
+  "ankr-(ankr)": () => import("./ankr-(ankr)-ASRCMKXF.mjs"),
+  "apple": () => import("./apple-AYGPUBZ2.mjs"),
+  "aquarius": () => import("./aquarius-AQMJ23XN.mjs"),
+  "archive-book": () => import("./archive-book-MQ6WTYRJ.mjs"),
+  "archive": () => import("./archive-VUHSZ7FM.mjs"),
+  "arrange-circle-2": () => import("./arrange-circle-2-5652DW7X.mjs"),
+  "arrange-circle": () => import("./arrange-circle-SCJ75MKQ.mjs"),
+  "arrange-square-2": () => import("./arrange-square-2-ILRVBVB5.mjs"),
+  "arrange-square": () => import("./arrange-square-P7RGP25Y.mjs"),
+  "arrow-2": () => import("./arrow-2-IXIR73CB.mjs"),
+  "arrow-3": () => import("./arrow-3-YVN7XT52.mjs"),
+  "arrow-circle-down": () => import("./arrow-circle-down-SQOTXXPJ.mjs"),
+  "arrow-circle-left": () => import("./arrow-circle-left-AINRYR76.mjs"),
+  "arrow-circle-right": () => import("./arrow-circle-right-26IUYN4Y.mjs"),
+  "arrow-circle-up": () => import("./arrow-circle-up-UIVGAXMR.mjs"),
+  "arrow-down": () => import("./arrow-down-QDCJ6K26.mjs"),
+  "arrow-down2": () => import("./arrow-down2-M544X7ED.mjs"),
+  "arrow-down3": () => import("./arrow-down3-K4JHGMXV.mjs"),
+  "arrow-down4": () => import("./arrow-down4-GA72TEH2.mjs"),
+  "arrow-left": () => import("./arrow-left-4TNCBPRG.mjs"),
+  "arrow-left2": () => import("./arrow-left2-MYFQMCLJ.mjs"),
+  "arrow-left3": () => import("./arrow-left3-HCL5ZU5M.mjs"),
+  "arrow-left4": () => import("./arrow-left4-533WVWTP.mjs"),
+  "arrow-right": () => import("./arrow-right-IER5364K.mjs"),
+  "arrow-right2": () => import("./arrow-right2-27F3FEFC.mjs"),
+  "arrow-right3": () => import("./arrow-right3-RXZJK3V3.mjs"),
+  "arrow-right4": () => import("./arrow-right4-46LDQ4XM.mjs"),
+  "arrow-square-down": () => import("./arrow-square-down-3RLZSYSY.mjs"),
+  "arrow-square-left": () => import("./arrow-square-left-TUKTNSOP.mjs"),
+  "arrow-square-right": () => import("./arrow-square-right-THKB5JKA.mjs"),
+  "arrow-square-up": () => import("./arrow-square-up-72MD3U6X.mjs"),
+  "arrow-swap-horizontal": () => import("./arrow-swap-horizontal-Y5OLONTT.mjs"),
+  "arrow-swap-vertical": () => import("./arrow-swap-vertical-LSI6O2AM.mjs"),
+  "arrow-up": () => import("./arrow-up-3OL7TZQU.mjs"),
+  "arrow-up2": () => import("./arrow-up2-CYJIEDFQ.mjs"),
+  "arrow-up3": () => import("./arrow-up3-SYEZVJAC.mjs"),
+  "arrow-up4": () => import("./arrow-up4-YQQN5M7Y.mjs"),
+  "attach-circle": () => import("./attach-circle-LRWJ5FCV.mjs"),
+  "attach-square": () => import("./attach-square-C6LI2OHL.mjs"),
+  "audio-square": () => import("./audio-square-RKZFETO6.mjs"),
+  "augur-(rep)": () => import("./augur-(rep)-6LDFXL5Z.mjs"),
+  "autobrightness": () => import("./autobrightness-UD7VYEMS.mjs"),
+  "autonio-(niox)": () => import("./autonio-(niox)-FVR42QUE.mjs"),
+  "avalanche-(avax)": () => import("./avalanche-(avax)-UOYAJR6H.mjs"),
+  "award": () => import("./award-OBWH6I7L.mjs"),
+  "back-square": () => import("./back-square-IY4SNNX4.mjs"),
+  "backward-10-seconds": () => import("./backward-10-seconds-ELNWWR3Z.mjs"),
+  "backward-15-seconds": () => import("./backward-15-seconds-4XRF4GND.mjs"),
+  "backward-5-seconds": () => import("./backward-5-seconds-E33J26ZP.mjs"),
+  "backward-item": () => import("./backward-item-KAYELS7A.mjs"),
+  "backward": () => import("./backward-PA2BTUHX.mjs"),
+  "bag-2": () => import("./bag-2-NE6QPYKC.mjs"),
+  "bag-cross-2": () => import("./bag-cross-2-EVSXPDHD.mjs"),
+  "bag-cross": () => import("./bag-cross-BUO6SYJM.mjs"),
+  "bag-happy": () => import("./bag-happy-QIZ6B4KT.mjs"),
+  "bag-tick-2": () => import("./bag-tick-2-LD7T7ROC.mjs"),
+  "bag-tick": () => import("./bag-tick-XSDL4W4O.mjs"),
+  "bag-timer": () => import("./bag-timer-IYJCIDWW.mjs"),
+  "bag": () => import("./bag-H46S2IUS.mjs"),
+  "bank": () => import("./bank-QY4R6KFT.mjs"),
+  "barcode": () => import("./barcode-UYNKJ7JQ.mjs"),
+  "battery-23full": () => import("./battery-23full-VLA4MIW3.mjs"),
+  "battery-charging": () => import("./battery-charging-E2RCSUYB.mjs"),
+  "battery-disable": () => import("./battery-disable-GCSMVUZC.mjs"),
+  "battery-empty-2": () => import("./battery-empty-2-KGMFWVDE.mjs"),
+  "battery-empty": () => import("./battery-empty-SL3YQ5DJ.mjs"),
+  "battery-full": () => import("./battery-full-PRQEXERQ.mjs"),
+  "be": () => import("./be-LRVEZM62.mjs"),
+  "bezier": () => import("./bezier-XO2G4EE5.mjs"),
+  "bill": () => import("./bill-ERLOI5T4.mjs"),
+  "binance-coin-(bnb)": () => import("./binance-coin-(bnb)-PK5S72QO.mjs"),
+  "binance-usd-(busd)": () => import("./binance-usd-(busd)-DGBGFOXU.mjs"),
+  "bitcoin-(btc)": () => import("./bitcoin-(btc)-MJWMX43A.mjs"),
+  "bitcoin-card": () => import("./bitcoin-card-EY323AJT.mjs"),
+  "bitcoin-convert": () => import("./bitcoin-convert-5LP2TRUF.mjs"),
+  "bitcoin-refresh": () => import("./bitcoin-refresh-PJWRPVH3.mjs"),
+  "blend-2": () => import("./blend-2-56ZG7VGT.mjs"),
+  "blend": () => import("./blend-SKE5JDOQ.mjs"),
+  "blogger": () => import("./blogger-ZW3TU5Z5.mjs"),
+  "bluetooth-2": () => import("./bluetooth-2-ALAYWLFV.mjs"),
+  "bluetooth-circle": () => import("./bluetooth-circle-JIBHPHKN.mjs"),
+  "bluetooth-rectangle": () => import("./bluetooth-rectangle-UNNSQI44.mjs"),
+  "bluetooth": () => import("./bluetooth-3KEAIAD5.mjs"),
+  "blur": () => import("./blur-OHZGLSCI.mjs"),
+  "book-2": () => import("./book-2-VEP63EQG.mjs"),
+  "book": () => import("./book-JFNDD5OY.mjs"),
+  "bookmark-2": () => import("./bookmark-2-6XFUY43Q.mjs"),
+  "bookmark": () => import("./bookmark-6PATTLTG.mjs"),
+  "bootstrap": () => import("./bootstrap-IQLGL4DB.mjs"),
+  "box-2": () => import("./box-2-I22M2REP.mjs"),
+  "box-add": () => import("./box-add-TCQT3ILL.mjs"),
+  "box-remove": () => import("./box-remove-TSDWIP4B.mjs"),
+  "box-search": () => import("./box-search-AF7EKJVK.mjs"),
+  "box-tick": () => import("./box-tick-VTWQYIDT.mjs"),
+  "box-time": () => import("./box-time-NNBWNGW4.mjs"),
+  "box": () => import("./box-E3KGY3AX.mjs"),
+  "briefcase": () => import("./briefcase-MH73EU5R.mjs"),
+  "brifecase-cross": () => import("./brifecase-cross-XXPO2ZI6.mjs"),
+  "brifecase-timer": () => import("./brifecase-timer-EJJGR5NZ.mjs"),
+  "broom": () => import("./broom-W7IIQKU7.mjs"),
+  "brush-2": () => import("./brush-2-WSG57F4L.mjs"),
+  "brush-3": () => import("./brush-3-FDESXW6I.mjs"),
+  "brush-4": () => import("./brush-4-WUNEE67W.mjs"),
+  "brush": () => import("./brush-HRW5KFG4.mjs"),
+  "bubble": () => import("./bubble-OKK2GA43.mjs"),
+  "bucket-circle": () => import("./bucket-circle-PPJFLVI4.mjs"),
+  "bucket-square": () => import("./bucket-square-BSCM3VVL.mjs"),
+  "building-3": () => import("./building-3-PMJOJAEX.mjs"),
+  "building-4": () => import("./building-4-IN72WWIW.mjs"),
+  "building": () => import("./building-BGC2GLLI.mjs"),
+  "buildings-2": () => import("./buildings-2-V2H5ELFR.mjs"),
+  "buildings": () => import("./buildings-FEXBP7G6.mjs"),
+  "bus": () => import("./bus-CZXEUXM5.mjs"),
+  "buy-crypto": () => import("./buy-crypto-5LFKAPE3.mjs"),
+  "cake": () => import("./cake-4TQ6JASH.mjs"),
+  "calculator": () => import("./calculator-6UW77Y7T.mjs"),
+  "calendar-2": () => import("./calendar-2-4OCXLG4I.mjs"),
+  "calendar-3": () => import("./calendar-3-NCMOOY5W.mjs"),
+  "calendar-add": () => import("./calendar-add-YKWM3VKO.mjs"),
+  "calendar-circle": () => import("./calendar-circle-JATX3WLK.mjs"),
+  "calendar-edit": () => import("./calendar-edit-TJS5R62H.mjs"),
+  "calendar-remove": () => import("./calendar-remove-URMZGK54.mjs"),
+  "calendar-search": () => import("./calendar-search-SG22XWD4.mjs"),
+  "calendar-tick": () => import("./calendar-tick-N2Y3DKSH.mjs"),
+  "calendar": () => import("./calendar-M36XUJ3X.mjs"),
+  "call-add": () => import("./call-add-UAGKTLUJ.mjs"),
+  "call-calling": () => import("./call-calling-7WGDVUVA.mjs"),
+  "call-incoming": () => import("./call-incoming-4EIFALYP.mjs"),
+  "call-minus": () => import("./call-minus-NKRSJOOW.mjs"),
+  "call-outgoing": () => import("./call-outgoing-L7IO2KD2.mjs"),
+  "call-received": () => import("./call-received-WDVDGESJ.mjs"),
+  "call-remove": () => import("./call-remove-KK64NEMC.mjs"),
+  "call-slash": () => import("./call-slash-7Y5EVDTW.mjs"),
+  "call": () => import("./call-4OXAAIFE.mjs"),
+  "camera-slash": () => import("./camera-slash-ZXIHMN2F.mjs"),
+  "camera": () => import("./camera-AL6VHJWV.mjs"),
+  "candle-2": () => import("./candle-2-5QE7KSFO.mjs"),
+  "candle": () => import("./candle-5MSCUH2C.mjs"),
+  "car": () => import("./car-KRBEL5T2.mjs"),
+  "card-add": () => import("./card-add-7GFWPMN3.mjs"),
+  "card-coin": () => import("./card-coin-LR2XOGOT.mjs"),
+  "card-edit": () => import("./card-edit-LRDEP7RD.mjs"),
+  "card-pos": () => import("./card-pos-F5XASAL2.mjs"),
+  "card-receive": () => import("./card-receive-TADQB5OW.mjs"),
+  "card-remove-2": () => import("./card-remove-2-ZKBTKOCI.mjs"),
+  "card-remove": () => import("./card-remove-SDSOBUSX.mjs"),
+  "card-send": () => import("./card-send-N53CV34M.mjs"),
+  "card-slash": () => import("./card-slash-S7DUO6FP.mjs"),
+  "card-tick-2": () => import("./card-tick-2-7A5YVN7V.mjs"),
+  "card-tick": () => import("./card-tick-PCWSBL7C.mjs"),
+  "card": () => import("./card-WYPKBPRJ.mjs"),
+  "cardano-(ada)": () => import("./cardano-(ada)-R6EDROSF.mjs"),
+  "cards": () => import("./cards-HEURMNNX.mjs"),
+  "category-2": () => import("./category-2-SP3ILWTG.mjs"),
+  "cd": () => import("./cd-4DPGO2GM.mjs"),
+  "celo-(celo)": () => import("./celo-(celo)-E47QNLIC.mjs"),
+  "celsius-(cel)-": () => import("./celsius-(cel)--DASQSHGB.mjs"),
+  "chainlink-(link)": () => import("./chainlink-(link)-U6Y67ZJR.mjs"),
+  "chart-2": () => import("./chart-2-XHMKABLP.mjs"),
+  "chart-3": () => import("./chart-3-5OG6EC3R.mjs"),
+  "chart-4": () => import("./chart-4-PVQ4XAKV.mjs"),
+  "chart-failure": () => import("./chart-failure-ZTZXBDJM.mjs"),
+  "chart-square": () => import("./chart-square-3UBXSYDS.mjs"),
+  "chart-success": () => import("./chart-success-CLNYM46F.mjs"),
+  "chart": () => import("./chart-WL3KODPM.mjs"),
+  "check": () => import("./check-HZFXPVQI.mjs"),
+  "chrome": () => import("./chrome-NDP44TOX.mjs"),
+  "civic-cvc": () => import("./civic-cvc-RUZ6V75D.mjs"),
+  "clipboard-close": () => import("./clipboard-close-7GAEADJR.mjs"),
+  "clipboard-export": () => import("./clipboard-export-A2L75NZI.mjs"),
+  "clipboard-import": () => import("./clipboard-import-CUSHSAF6.mjs"),
+  "clipboard-text": () => import("./clipboard-text-I6MKPNAH.mjs"),
+  "clipboard-tick": () => import("./clipboard-tick-DM32J5IY.mjs"),
+  "clipboard": () => import("./clipboard-GLKBMMP5.mjs"),
+  "clock": () => import("./clock-MOGC6YDN.mjs"),
+  "close-circle": () => import("./close-circle-TQCYASLA.mjs"),
+  "close-square": () => import("./close-square-VYQ35V7F.mjs"),
+  "cloud-add": () => import("./cloud-add-4UIMPLCK.mjs"),
+  "cloud-change": () => import("./cloud-change-UNGDOVTR.mjs"),
+  "cloud-connection": () => import("./cloud-connection-EUTB6WWC.mjs"),
+  "cloud-cross": () => import("./cloud-cross-AD6H7RJN.mjs"),
+  "cloud-drizzle": () => import("./cloud-drizzle-2OTY3INV.mjs"),
+  "cloud-fog": () => import("./cloud-fog-JSMZQGTO.mjs"),
+  "cloud-lightning": () => import("./cloud-lightning-PXXI3JAB.mjs"),
+  "cloud-minus": () => import("./cloud-minus-E2JJSE5V.mjs"),
+  "cloud-notif": () => import("./cloud-notif-2KPJFMOD.mjs"),
+  "cloud-plus": () => import("./cloud-plus-EYO6JCS3.mjs"),
+  "cloud-remove": () => import("./cloud-remove-YDCGXDS6.mjs"),
+  "cloud-snow": () => import("./cloud-snow-TV7OGRVH.mjs"),
+  "cloud-sunny": () => import("./cloud-sunny-5R5SXUDE.mjs"),
+  "cloud": () => import("./cloud-SEUSC6FI.mjs"),
+  "code-2": () => import("./code-2-WVBX4X6Y.mjs"),
+  "code-circle": () => import("./code-circle-FWBPUBKO.mjs"),
+  "code": () => import("./code-PDWK5M4H.mjs"),
+  "coin-2": () => import("./coin-2-45FIHFOI.mjs"),
+  "coin": () => import("./coin-A43BP3JR.mjs"),
+  "color-swatch": () => import("./color-swatch-QHR3FH2B.mjs"),
+  "colorfilter": () => import("./colorfilter-UGPBBGYV.mjs"),
+  "colors-square": () => import("./colors-square-QPIFNAHG.mjs"),
+  "command-square": () => import("./command-square-CDWFNYHI.mjs"),
+  "command": () => import("./command-BJBUM6QY.mjs"),
+  "component": () => import("./component-DHVMQCAV.mjs"),
+  "computing": () => import("./computing-772WS2BE.mjs"),
+  "convert-3d-cube": () => import("./convert-3d-cube-JRHL5KXH.mjs"),
+  "convert": () => import("./convert-MPUDV6XD.mjs"),
+  "convertshape-2": () => import("./convertshape-2-FOJ7222T.mjs"),
+  "convertshape": () => import("./convertshape-34AXDAEG.mjs"),
+  "copy-success": () => import("./copy-success-C6Q6JREO.mjs"),
+  "copy": () => import("./copy-NOHO2B4N.mjs"),
+  "copyright": () => import("./copyright-M24V57MX.mjs"),
+  "courthouse": () => import("./courthouse-VCWMJ262.mjs"),
+  "cpu-charge": () => import("./cpu-charge-AJP36R7T.mjs"),
+  "cpu-setting": () => import("./cpu-setting-ETEYEJUK.mjs"),
+  "cpu": () => import("./cpu-XVGKGKOF.mjs"),
+  "creative-commons": () => import("./creative-commons-3CJOHXCG.mjs"),
+  "crop": () => import("./crop-42WEADRS.mjs"),
+  "crown-2": () => import("./crown-2-A2RTVEU6.mjs"),
+  "crown": () => import("./crown-SPAO2SVG.mjs"),
+  "cup": () => import("./cup-OLD2SKTN.mjs"),
+  "dai-(dai)": () => import("./dai-(dai)-IP2APMOF.mjs"),
+  "danger": () => import("./danger-IAKO24BE.mjs"),
+  "dash-dash": () => import("./dash-dash-BMWNUHNX.mjs"),
+  "data-2": () => import("./data-2-MDG2OCYY.mjs"),
+  "data": () => import("./data-THYNQLDO.mjs"),
+  "decred-(dcr)": () => import("./decred-(dcr)-HZ7UKVJ7.mjs"),
+  "dent-crypto-company": () => import("./dent-crypto-company-SUG4MEBM.mjs"),
+  "designtools": () => import("./designtools-QVR2GS2O.mjs"),
+  "device-message": () => import("./device-message-ENUWKJFJ.mjs"),
+  "devices": () => import("./devices-5ZEWP6RM.mjs"),
+  "diagram": () => import("./diagram-U7FNNX36.mjs"),
+  "diamonds": () => import("./diamonds-TGS6UZVY.mjs"),
+  "direct-down": () => import("./direct-down-SCL6TPQV.mjs"),
+  "direct-inbox": () => import("./direct-inbox-D7YEB2VH.mjs"),
+  "direct-left": () => import("./direct-left-SF5WIS5I.mjs"),
+  "direct-normal": () => import("./direct-normal-ZWPYSSXT.mjs"),
+  "direct-notification": () => import("./direct-notification-CQZIWSB5.mjs"),
+  "direct-right": () => import("./direct-right-XXPKEXTZ.mjs"),
+  "direct-send": () => import("./direct-send-YAFCCIJ3.mjs"),
+  "direct-up": () => import("./direct-up-VCJH6T3I.mjs"),
+  "direct": () => import("./direct-HDYJADQP.mjs"),
+  "directbox-default": () => import("./directbox-default-WGQFXKWN.mjs"),
+  "directbox-notif": () => import("./directbox-notif-TYJQJF4S.mjs"),
+  "directbox-receive": () => import("./directbox-receive-25MULQBR.mjs"),
+  "directbox-send": () => import("./directbox-send-MUHBYQNC.mjs"),
+  "discount-circle": () => import("./discount-circle-VXN24XC5.mjs"),
+  "discount-shape": () => import("./discount-shape-UJFLAOAO.mjs"),
+  "discover": () => import("./discover-DU7MBA6R.mjs"),
+  "dislike": () => import("./dislike-L43UKWV6.mjs"),
+  "document-cloud": () => import("./document-cloud-C7TMOAUG.mjs"),
+  "document-code-2": () => import("./document-code-2-YPYC2Y6O.mjs"),
+  "document-code": () => import("./document-code-QA2GSNX3.mjs"),
+  "document-copy": () => import("./document-copy-KBNIL3KN.mjs"),
+  "document-download": () => import("./document-download-BKMFQR33.mjs"),
+  "document-favorite": () => import("./document-favorite-T2UKENZV.mjs"),
+  "document-filter": () => import("./document-filter-FDHJTIVF.mjs"),
+  "document-forward": () => import("./document-forward-5N3PTR5O.mjs"),
+  "document-like": () => import("./document-like-FGFCPN3P.mjs"),
+  "document-normal": () => import("./document-normal-5SXK5OEJ.mjs"),
+  "document-previous": () => import("./document-previous-6TTDX32E.mjs"),
+  "document-sketch": () => import("./document-sketch-T3BWRTNM.mjs"),
+  "document-text-2": () => import("./document-text-2-4D42FQZK.mjs"),
+  "document-text": () => import("./document-text-K4GS6ZMG.mjs"),
+  "document-upload": () => import("./document-upload-FPJNTZ6P.mjs"),
+  "document": () => import("./document-LY2XGEPO.mjs"),
+  "dollar-circle": () => import("./dollar-circle-4I5WERXL.mjs"),
+  "dollar-square": () => import("./dollar-square-WFGIMWII.mjs"),
+  "dribbble": () => import("./dribbble-TY57XX23.mjs"),
+  "driver-2": () => import("./driver-2-YTGOHFLH.mjs"),
+  "driver-refresh": () => import("./driver-refresh-HOI7IKQ6.mjs"),
+  "driver": () => import("./driver-3ZTEZALH.mjs"),
+  "driving": () => import("./driving-HHCYGA45.mjs"),
+  "drop": () => import("./drop-PN3QQHXR.mjs"),
+  "dropbox": () => import("./dropbox-JYWBM672.mjs"),
+  "edit-2": () => import("./edit-2-IFQU5PKZ.mjs"),
+  "edit": () => import("./edit-COMXOPBB.mjs"),
+  "educare-(ekt)": () => import("./educare-(ekt)-HAKFMVIX.mjs"),
+  "electricity": () => import("./electricity-F2EPU4US.mjs"),
+  "element-1": () => import("./element-1-BQH7TZCP.mjs"),
+  "element-2": () => import("./element-2-S55ZHNPZ.mjs"),
+  "element-3": () => import("./element-3-JBBW4WEE.mjs"),
+  "element-4": () => import("./element-4-66M4HZ4N.mjs"),
+  "element-equal": () => import("./element-equal-D6ACDPDM.mjs"),
+  "element-plus": () => import("./element-plus-EYEMASGC.mjs"),
+  "emercoin-(emc)": () => import("./emercoin-(emc)-6U5US5OU.mjs"),
+  "emoji-happy": () => import("./emoji-happy-IQAAIS2L.mjs"),
+  "emoji-normal": () => import("./emoji-normal-AVIJ36JI.mjs"),
+  "emoji-sad": () => import("./emoji-sad-NT65Y4EA.mjs"),
+  "empty-wallet-add": () => import("./empty-wallet-add-LBHPDOL5.mjs"),
+  "empty-wallet-change": () => import("./empty-wallet-change-URXGWMII.mjs"),
+  "empty-wallet-remove": () => import("./empty-wallet-remove-PNKOR2JF.mjs"),
+  "empty-wallet-tick": () => import("./empty-wallet-tick-Z4DSSWJQ.mjs"),
+  "empty-wallet-time": () => import("./empty-wallet-time-PNH4A6SJ.mjs"),
+  "empty-wallet": () => import("./empty-wallet-XIIULGYJ.mjs"),
+  "enjin-coin-(enj)": () => import("./enjin-coin-(enj)-TGMAA5HM.mjs"),
+  "eos-(eos)": () => import("./eos-(eos)-D4KGZKED.mjs"),
+  "eraser": () => import("./eraser-BKJ3J4S3.mjs"),
+  "ethereum-(eth)": () => import("./ethereum-(eth)-KABCF725.mjs"),
+  "ethereum-classic-(etc)": () => import("./ethereum-classic-(etc)-5NCZQYV3.mjs"),
+  "export-2": () => import("./export-2-4LUFYYB6.mjs"),
+  "export-3": () => import("./export-3-AFP5BCEW.mjs"),
+  "export-4": () => import("./export-4-IJZAXLBV.mjs"),
+  "export": () => import("./export-M3DT5RWZ.mjs"),
+  "external-drive": () => import("./external-drive-ALHMDUOV.mjs"),
+  "eye-slash": () => import("./eye-slash-K57CIVX3.mjs"),
+  "eye": () => import("./eye-O76KE65Z.mjs"),
+  "facebook": () => import("./facebook-QEKNOCZA.mjs"),
+  "fast-truck": () => import("./fast-truck-B46YMHC5.mjs"),
+  "fatrows": () => import("./fatrows-3M7RYND4.mjs"),
+  "favorite-chart": () => import("./favorite-chart-COVYY2X4.mjs"),
+  "figma-2": () => import("./figma-2-OMJ5OQPY.mjs"),
+  "figma": () => import("./figma-DJBJIKQK.mjs"),
+  "filter-add": () => import("./filter-add-LNLR2P4A.mjs"),
+  "filter-edit": () => import("./filter-edit-2D5VKSWC.mjs"),
+  "filter-remove": () => import("./filter-remove-ZPHWYSQQ.mjs"),
+  "filter-search": () => import("./filter-search-7DT62SKT.mjs"),
+  "filter-square": () => import("./filter-square-Y5MGLGTT.mjs"),
+  "filter-tick": () => import("./filter-tick-V7H3I4WR.mjs"),
+  "filter": () => import("./filter-HM2FBE5P.mjs"),
+  "finger-cricle": () => import("./finger-cricle-X5LZGGU2.mjs"),
+  "finger-scan": () => import("./finger-scan-H372FN4J.mjs"),
+  "firstline": () => import("./firstline-E6W6VZJJ.mjs"),
+  "flag-2": () => import("./flag-2-LE7U5O7O.mjs"),
+  "flag": () => import("./flag-OR35PPI5.mjs"),
+  "flash-circle": () => import("./flash-circle-KUD6EH2F.mjs"),
+  "flash-slash": () => import("./flash-slash-M2UEFGDP.mjs"),
+  "flash": () => import("./flash-2YYYKVDI.mjs"),
+  "folder-2": () => import("./folder-2-7CUWSBNQ.mjs"),
+  "folder-add": () => import("./folder-add-Q35SOSKP.mjs"),
+  "folder-cloud": () => import("./folder-cloud-T6SGEKPV.mjs"),
+  "folder-connection": () => import("./folder-connection-5BKAT5UF.mjs"),
+  "folder-cross": () => import("./folder-cross-PN6VJOTO.mjs"),
+  "folder-favorite": () => import("./folder-favorite-OZDZXG4H.mjs"),
+  "folder-minus": () => import("./folder-minus-FEW3TCHK.mjs"),
+  "folder-open": () => import("./folder-open-JCEMREZI.mjs"),
+  "folder": () => import("./folder-OGFL4I53.mjs"),
+  "format-circle": () => import("./format-circle-JPYCZAGH.mjs"),
+  "format-square": () => import("./format-square-PQWHPGCR.mjs"),
+  "forward-10-seconds": () => import("./forward-10-seconds-JBMZGILZ.mjs"),
+  "forward-15-seconds": () => import("./forward-15-seconds-IXFRZQUE.mjs"),
+  "forward-5-seconds": () => import("./forward-5-seconds-5KC4FVT4.mjs"),
+  "forward-item": () => import("./forward-item-RZLAYHM5.mjs"),
+  "forward-square": () => import("./forward-square-PJTUTEW3.mjs"),
+  "forward": () => import("./forward-LH6M2U2L.mjs"),
+  "framer": () => import("./framer-EMO2GIPN.mjs"),
+  "ftx-token-(ftt)": () => import("./ftx-token-(ftt)-2NNJKKW6.mjs"),
+  "gallery-add": () => import("./gallery-add-X6EIRJDC.mjs"),
+  "gallery-edit": () => import("./gallery-edit-7BRCKFDN.mjs"),
+  "gallery-export": () => import("./gallery-export-SDQBWB2F.mjs"),
+  "gallery-favorite": () => import("./gallery-favorite-NERDJSON.mjs"),
+  "gallery-import": () => import("./gallery-import-LQOYZDH2.mjs"),
+  "gallery-remove": () => import("./gallery-remove-X6NASOER.mjs"),
+  "gallery-slash": () => import("./gallery-slash-OT3MCAAI.mjs"),
+  "gallery-tick": () => import("./gallery-tick-PV3ON4BD.mjs"),
+  "gallery": () => import("./gallery-OHAL5OMI.mjs"),
+  "game": () => import("./game-H7DFH4QD.mjs"),
+  "gameboy": () => import("./gameboy-HTEDGUIM.mjs"),
+  "gas-station": () => import("./gas-station-OEG7IKFS.mjs"),
+  "gemini-2": () => import("./gemini-2-5B2WN3HI.mjs"),
+  "gemini": () => import("./gemini-ISSEAWA7.mjs"),
+  "ghost": () => import("./ghost-UU7OISQX.mjs"),
+  "gift": () => import("./gift-6WN4ZZ4W.mjs"),
+  "glass": () => import("./glass-MUEUDKA5.mjs"),
+  "global-edit": () => import("./global-edit-5AZZFF72.mjs"),
+  "global-refresh": () => import("./global-refresh-XRAX6THF.mjs"),
+  "global-search": () => import("./global-search-O24VND43.mjs"),
+  "global": () => import("./global-ZGUH474M.mjs"),
+  "google-2": () => import("./google-2-UGG257A5.mjs"),
+  "google-play": () => import("./google-play-5VRLTIVQ.mjs"),
+  "google": () => import("./google-GA5N3WMO.mjs"),
+  "gps-slash": () => import("./gps-slash-MW2HLSAM.mjs"),
+  "gps": () => import("./gps-55OBVCQV.mjs"),
+  "grammerly": () => import("./grammerly-PYQHI3KG.mjs"),
+  "graph": () => import("./graph-GF4QSSAH.mjs"),
+  "grid-1": () => import("./grid-1-UHVFZQUY.mjs"),
+  "grid-2": () => import("./grid-2-2CFA67L6.mjs"),
+  "grid-3": () => import("./grid-3-GOB2KU6U.mjs"),
+  "grid-4": () => import("./grid-4-MHOBDGFS.mjs"),
+  "grid-5": () => import("./grid-5-ZZQJLNTF.mjs"),
+  "grid-6": () => import("./grid-6-BAKYWBYN.mjs"),
+  "grid-7": () => import("./grid-7-TGTYFDNF.mjs"),
+  "grid-8": () => import("./grid-8-HSJQIBFE.mjs"),
+  "grid-9": () => import("./grid-9-IMPIZ3EL.mjs"),
+  "grid-edit": () => import("./grid-edit-IJP2C3B7.mjs"),
+  "grid-eraser": () => import("./grid-eraser-VY7SJUNT.mjs"),
+  "grid-lock": () => import("./grid-lock-RP5U34ZF.mjs"),
+  "group-2": () => import("./group-2-5AZGIRUW.mjs"),
+  "group-3": () => import("./group-3-2PZJCYR7.mjs"),
+  "group": () => import("./group-PPBCZLOM.mjs"),
+  "happyemoji": () => import("./happyemoji-2QIPF3QF.mjs"),
+  "harmony-(one)": () => import("./harmony-(one)-HJ45USJY.mjs"),
+  "hashtag-down": () => import("./hashtag-down-4NSLABDA.mjs"),
+  "hashtag-up": () => import("./hashtag-up-BOYFDH57.mjs"),
+  "hashtag": () => import("./hashtag-JUN3AIHR.mjs"),
+  "headphone": () => import("./headphone-72M7OZ62.mjs"),
+  "headphones": () => import("./headphones-YM2NYCCU.mjs"),
+  "heart-add": () => import("./heart-add-ITHDY5ZS.mjs"),
+  "heart-circle": () => import("./heart-circle-E66HWYCB.mjs"),
+  "heart-edit": () => import("./heart-edit-TSRSYWD3.mjs"),
+  "heart-remove": () => import("./heart-remove-6CDSCLE4.mjs"),
+  "heart-search": () => import("./heart-search-Q52MOJTB.mjs"),
+  "heart-slash": () => import("./heart-slash-PJ7DFXEI.mjs"),
+  "heart-tick": () => import("./heart-tick-VBJFSYY2.mjs"),
+  "heart": () => import("./heart-4D34NVF6.mjs"),
+  "hedera-hashgraph-(hbar)": () => import("./hedera-hashgraph-(hbar)-J22FWQNK.mjs"),
+  "hex-(hex)": () => import("./hex-(hex)-EKLFC2FX.mjs"),
+  "hierarchy-2": () => import("./hierarchy-2-2G3UPWO7.mjs"),
+  "hierarchy-3": () => import("./hierarchy-3-VVNQ3PUR.mjs"),
+  "hierarchy-square-2": () => import("./hierarchy-square-2-XF2QCIRE.mjs"),
+  "hierarchy-square-3": () => import("./hierarchy-square-3-IPPE2DYZ.mjs"),
+  "hierarchy-square": () => import("./hierarchy-square-6IRJN2X2.mjs"),
+  "hierarchy": () => import("./hierarchy-AWH3UZZ5.mjs"),
+  "home-2": () => import("./home-2-XDFLH2NV.mjs"),
+  "home-hashtag": () => import("./home-hashtag-V7QHPSTS.mjs"),
+  "home-trend-down": () => import("./home-trend-down-7RHC26F2.mjs"),
+  "home-trend-up": () => import("./home-trend-up-NNQIKPY3.mjs"),
+  "home-wifi": () => import("./home-wifi-TVPMRNFV.mjs"),
+  "home": () => import("./home-GJ64J7TZ.mjs"),
+  "hospital": () => import("./hospital-VZWNSVSY.mjs"),
+  "house-2": () => import("./house-2-ADMNBDNI.mjs"),
+  "house": () => import("./house-GHO5DOCO.mjs"),
+  "html-3": () => import("./html-3-5YAFUHWD.mjs"),
+  "html-5": () => import("./html-5-KTZK6LU2.mjs"),
+  "huobi-token-(ht)": () => import("./huobi-token-(ht)-HWYR5GLP.mjs"),
+  "icon-(icx)": () => import("./icon-(icx)-RN2IWLZX.mjs"),
+  "illustrator": () => import("./illustrator-GZIXJJZ4.mjs"),
+  "image": () => import("./image-VQ5BGASS.mjs"),
+  "import-2": () => import("./import-2-WJPGHZ3O.mjs"),
+  "import-3": () => import("./import-3-3KCQEGBW.mjs"),
+  "import-4": () => import("./import-4-OHUVH63Y.mjs"),
+  "import": () => import("./import-TYY5KUKS.mjs"),
+  "info-circle": () => import("./info-circle-4TEEKEAI.mjs"),
+  "information": () => import("./information-ZX7GLXNJ.mjs"),
+  "instagram": () => import("./instagram-TTEKFL45.mjs"),
+  "iost-iost": () => import("./iost-iost-KEJCCTKW.mjs"),
+  "java-script": () => import("./java-script-FEXLDN4Q.mjs"),
+  "js": () => import("./js-WIXOQPWZ.mjs"),
+  "judge": () => import("./judge-NZE3US4S.mjs"),
+  "kanban": () => import("./kanban-BZQ5TUOW.mjs"),
+  "key-square": () => import("./key-square-GPFVXKE6.mjs"),
+  "key": () => import("./key-H443BFIK.mjs"),
+  "keyboard-open": () => import("./keyboard-open-C6RN2E42.mjs"),
+  "keyboard": () => import("./keyboard-AUHPIKPI.mjs"),
+  "kyber-network-(knc)": () => import("./kyber-network-(knc)-6VRAP3QW.mjs"),
+  "lamp-charge": () => import("./lamp-charge-B26YI3VP.mjs"),
+  "lamp-on": () => import("./lamp-on-BBCQ2XRU.mjs"),
+  "lamp-slash": () => import("./lamp-slash-CIWYZEPS.mjs"),
+  "lamp": () => import("./lamp-WZ5AYLLF.mjs"),
+  "language-circle": () => import("./language-circle-AFA5IRHZ.mjs"),
+  "language-square": () => import("./language-square-IZ5LUXFW.mjs"),
+  "layer": () => import("./layer-NXTEKBTY.mjs"),
+  "level": () => import("./level-KF64JQPP.mjs"),
+  "lifebuoy": () => import("./lifebuoy-AVXFQJTR.mjs"),
+  "like-2": () => import("./like-2-GB3SYLSF.mjs"),
+  "like-dislike": () => import("./like-dislike-WEZB5WX6.mjs"),
+  "like-shapes": () => import("./like-shapes-EC4ODZZM.mjs"),
+  "like-tag": () => import("./like-tag-RQBSMIM5.mjs"),
+  "like": () => import("./like-VDNCFZBL.mjs"),
+  "link-2": () => import("./link-2-5CGMYU5W.mjs"),
+  "link-3": () => import("./link-3-FYYXMOWC.mjs"),
+  "link-4": () => import("./link-4-C6VRETS4.mjs"),
+  "link-circle": () => import("./link-circle-YDN3VBTX.mjs"),
+  "link-square": () => import("./link-square-OGNMO2YW.mjs"),
+  "link": () => import("./link-NY4OJNAO.mjs"),
+  "litecoin(ltc)": () => import("./litecoin(ltc)-YIKRINUN.mjs"),
+  "location-add": () => import("./location-add-S4P56QFF.mjs"),
+  "location-cross": () => import("./location-cross-S4WYOAAQ.mjs"),
+  "location-minus": () => import("./location-minus-5UJW2OJV.mjs"),
+  "location-slash": () => import("./location-slash-LY65WMES.mjs"),
+  "location-tick": () => import("./location-tick-AD77ZRO4.mjs"),
+  "location": () => import("./location-AN6UV3PB.mjs"),
+  "lock-2": () => import("./lock-2-XVGSHY3E.mjs"),
+  "lock-circle": () => import("./lock-circle-X2XKH3JJ.mjs"),
+  "lock-slash": () => import("./lock-slash-6QYFL36M.mjs"),
+  "lock": () => import("./lock-E3244RVK.mjs"),
+  "login-2": () => import("./login-2-TSXSLD2W.mjs"),
+  "login": () => import("./login-L5XURM5V.mjs"),
+  "logout-2": () => import("./logout-2-IBEFBZQR.mjs"),
+  "logout": () => import("./logout-VQQOAYRS.mjs"),
+  "lovely": () => import("./lovely-6D4KALPZ.mjs"),
+  "magic-star": () => import("./magic-star-VXODMXJD.mjs"),
+  "magicpen": () => import("./magicpen-SCP65Z2S.mjs"),
+  "main-component": () => import("./main-component-ERPWEY5Y.mjs"),
+  "maker-(mkr)": () => import("./maker-(mkr)-UNGS2YAJ.mjs"),
+  "man": () => import("./man-AKNVYQUB.mjs"),
+  "map-2": () => import("./map-2-YXDETOAM.mjs"),
+  "map": () => import("./map-EQQTCFU5.mjs"),
+  "mask-2": () => import("./mask-2-WZ3BHD43.mjs"),
+  "mask-3": () => import("./mask-3-KR7JH6LK.mjs"),
+  "mask": () => import("./mask-LXYS4CGW.mjs"),
+  "maximize-2": () => import("./maximize-2-7PEVB3OG.mjs"),
+  "maximize-3": () => import("./maximize-3-72MS5TIF.mjs"),
+  "maximize-4": () => import("./maximize-4-ELK5O4JS.mjs"),
+  "maximize-5": () => import("./maximize-5-XSOTJM3F.mjs"),
+  "maximize-circle": () => import("./maximize-circle-MZH2K2FL.mjs"),
+  "maximize": () => import("./maximize-7VVHYV2I.mjs"),
+  "medal-star": () => import("./medal-star-TVHMVJ7A.mjs"),
+  "medal": () => import("./medal-TT6QUTXX.mjs"),
+  "menu-board": () => import("./menu-board-I56IP674.mjs"),
+  "menu": () => import("./menu-Z3275R6A.mjs"),
+  "message-2": () => import("./message-2-DPBXVLT7.mjs"),
+  "message-add-2": () => import("./message-add-2-V2BHSCK2.mjs"),
+  "message-add": () => import("./message-add-UXQXEGCI.mjs"),
+  "message-circle": () => import("./message-circle-4KL5RZBQ.mjs"),
+  "message-favorite": () => import("./message-favorite-K5V4OWCZ.mjs"),
+  "message-minus": () => import("./message-minus-VDTCAGKS.mjs"),
+  "message-notif": () => import("./message-notif-VBZVOVQG.mjs"),
+  "message-programming": () => import("./message-programming-HP7XE3FE.mjs"),
+  "message-question": () => import("./message-question-YCKQZ322.mjs"),
+  "message-remove": () => import("./message-remove-NNJTF6RK.mjs"),
+  "message-search": () => import("./message-search-JYLWLT5O.mjs"),
+  "message-square": () => import("./message-square-GPTDULR6.mjs"),
+  "message-text-2": () => import("./message-text-2-RHPNLB37.mjs"),
+  "message-text": () => import("./message-text-5RUXS7AM.mjs"),
+  "message-tick": () => import("./message-tick-ZVWYOX4J.mjs"),
+  "message-time": () => import("./message-time-7JR7VNUJ.mjs"),
+  "message": () => import("./message-33VGAHS5.mjs"),
+  "messages-2": () => import("./messages-2-5KW67EIL.mjs"),
+  "messages-3": () => import("./messages-3-6SXQES2L.mjs"),
+  "messages-4": () => import("./messages-4-SJAGZQFR.mjs"),
+  "messages": () => import("./messages-KIQ3P5OS.mjs"),
+  "messenger": () => import("./messenger-YG7K4PWP.mjs"),
+  "microphone-2": () => import("./microphone-2-HI2QQQBB.mjs"),
+  "microphone-slash-2": () => import("./microphone-slash-2-TWOULXYA.mjs"),
+  "microphone-slash": () => import("./microphone-slash-2CRJB4DR.mjs"),
+  "microphone": () => import("./microphone-SQTGAYZM.mjs"),
+  "microscope": () => import("./microscope-G7RA7QLG.mjs"),
+  "milk": () => import("./milk-ZIXWMIIR.mjs"),
+  "mini-music-square": () => import("./mini-music-square-QD3SSLA6.mjs"),
+  "minus-circle": () => import("./minus-circle-Z665MDP4.mjs"),
+  "minus-square": () => import("./minus-square-OIL7VNMJ.mjs"),
+  "minus": () => import("./minus-MLQO7BFX.mjs"),
+  "mirror": () => import("./mirror-BRHWR4LZ.mjs"),
+  "mirroring-screen": () => import("./mirroring-screen-XB3B4ONL.mjs"),
+  "mobile-programming": () => import("./mobile-programming-MLHADSOQ.mjs"),
+  "mobile": () => import("./mobile-6OXRF7BH.mjs"),
+  "monero-xmr": () => import("./monero-xmr-U7654SWK.mjs"),
+  "money-2": () => import("./money-2-4BGRBBOG.mjs"),
+  "money-3": () => import("./money-3-3XRW7KVU.mjs"),
+  "money-4": () => import("./money-4-X23PCMEW.mjs"),
+  "money-add": () => import("./money-add-UYHIWNY5.mjs"),
+  "money-change": () => import("./money-change-24HM5HJC.mjs"),
+  "money-forbidden": () => import("./money-forbidden-OHK367D2.mjs"),
+  "money-recive": () => import("./money-recive-3W7EJ7XD.mjs"),
+  "money-remove": () => import("./money-remove-UBPYBBJU.mjs"),
+  "money-send": () => import("./money-send-XUWSBU6O.mjs"),
+  "money-tick": () => import("./money-tick-KQJDGAQ2.mjs"),
+  "money-time": () => import("./money-time-DJNV6DWV.mjs"),
+  "money": () => import("./money-KF4V5IJV.mjs"),
+  "moneys": () => import("./moneys-2C35HNXA.mjs"),
+  "monitor-mobbile": () => import("./monitor-mobbile-SOOBM5ME.mjs"),
+  "monitor-recorder": () => import("./monitor-recorder-FMCX6WH2.mjs"),
+  "monitor": () => import("./monitor-UL5OFCAU.mjs"),
+  "moon": () => import("./moon-H6ZCLS6T.mjs"),
+  "more-2": () => import("./more-2-L74HVK6R.mjs"),
+  "more-circle": () => import("./more-circle-IX3D2MJ2.mjs"),
+  "more-square": () => import("./more-square-PYTFNF5R.mjs"),
+  "more": () => import("./more-7OQSZS5F.mjs"),
+  "mouse-circle": () => import("./mouse-circle-42U4X62N.mjs"),
+  "mouse-square": () => import("./mouse-square-4HHQNY2H.mjs"),
+  "mouse": () => import("./mouse-YIZNNNNE.mjs"),
+  "music-circle": () => import("./music-circle-NLUR7JBW.mjs"),
+  "music-dashboard": () => import("./music-dashboard-Q4UETID5.mjs"),
+  "music-filter": () => import("./music-filter-N2LMODTE.mjs"),
+  "music-library-2": () => import("./music-library-2-2OSZ3L5O.mjs"),
+  "music-play": () => import("./music-play-FX7STPLB.mjs"),
+  "music-playlist": () => import("./music-playlist-FQ66NYCA.mjs"),
+  "music-square-add": () => import("./music-square-add-6IWCYAYE.mjs"),
+  "music-square-remove": () => import("./music-square-remove-UNG2C35S.mjs"),
+  "music-square-search": () => import("./music-square-search-SPGCNHET.mjs"),
+  "music-square": () => import("./music-square-ULR4LU7B.mjs"),
+  "music": () => import("./music-QX4DQJYF.mjs"),
+  "musicnote": () => import("./musicnote-NQGIEOXL.mjs"),
+  "nebulas-(nas)": () => import("./nebulas-(nas)-A2Z4ZYXN.mjs"),
+  "nem-(xem)": () => import("./nem-(xem)-PLV2UMSD.mjs"),
+  "nexo-(nexo)": () => import("./nexo-(nexo)-KL5JKSXI.mjs"),
+  "next": () => import("./next-EGWQQZVN.mjs"),
+  "note-2": () => import("./note-2-7Z34VGWN.mjs"),
+  "note-add": () => import("./note-add-IRHCXD72.mjs"),
+  "note-favorite": () => import("./note-favorite-AO6BZWDI.mjs"),
+  "note-remove": () => import("./note-remove-VWR5SQGH.mjs"),
+  "note-square": () => import("./note-square-GY3662VK.mjs"),
+  "note-text": () => import("./note-text-Q7DVF4X7.mjs"),
+  "note": () => import("./note-NFOYSRLE.mjs"),
+  "notification-2": () => import("./notification-2-JIAKEOFO.mjs"),
+  "notification-bing": () => import("./notification-bing-WWMH2LUG.mjs"),
+  "notification-circle": () => import("./notification-circle-YUIS7ZAW.mjs"),
+  "notification-favorite": () => import("./notification-favorite-R222LQG2.mjs"),
+  "notification-status": () => import("./notification-status-AHMSMJVP.mjs"),
+  "notification": () => import("./notification-PAJWQ33M.mjs"),
+  "ocean-protocol-(ocean)": () => import("./ocean-protocol-(ocean)-NEYDD4TL.mjs"),
+  "ok-app": () => import("./ok-app-NBMLWBM4.mjs"),
+  "okb-(okb)": () => import("./okb-(okb)-MMEUPSX7.mjs"),
+  "omega-circle": () => import("./omega-circle-KMF2XMKI.mjs"),
+  "omega-square": () => import("./omega-square-XWJZUO5D.mjs"),
+  "ontology-(ont)": () => import("./ontology-(ont)-B55GPQ4G.mjs"),
+  "paintbucket": () => import("./paintbucket-PMSGO3F6.mjs"),
+  "paperclip-2": () => import("./paperclip-2-KUJDERO6.mjs"),
+  "paperclip": () => import("./paperclip-EBES2IPC.mjs"),
+  "paragraphspacing": () => import("./paragraphspacing-QYJCDM47.mjs"),
+  "password-check": () => import("./password-check-TPTR65JB.mjs"),
+  "path-2": () => import("./path-2-ESBGXUM6.mjs"),
+  "path-square": () => import("./path-square-2XPUN5BJ.mjs"),
+  "path": () => import("./path-4TQWXLA3.mjs"),
+  "pause-circle": () => import("./pause-circle-SGGPE6SU.mjs"),
+  "pause": () => import("./pause-IL2L6JUU.mjs"),
+  "paypal": () => import("./paypal-QVKAY6SV.mjs"),
+  "pen-add": () => import("./pen-add-UBXTBU3K.mjs"),
+  "pen-close": () => import("./pen-close-ZIFILQDJ.mjs"),
+  "pen-remove": () => import("./pen-remove-RI6YZ4DV.mjs"),
+  "pen-tool-2": () => import("./pen-tool-2-53WIQGSU.mjs"),
+  "pen-tool": () => import("./pen-tool-YGJO5LJC.mjs"),
+  "people": () => import("./people-PQASXZIB.mjs"),
+  "percentage-square": () => import("./percentage-square-TRIRKR6J.mjs"),
+  "personalcard": () => import("./personalcard-KDFTPLZR.mjs"),
+  "pet": () => import("./pet-RAQRPFYW.mjs"),
+  "photoshop": () => import("./photoshop-OGQNRJH5.mjs"),
+  "play-add": () => import("./play-add-JYPGTL72.mjs"),
+  "play-circle": () => import("./play-circle-QTSQ3H4K.mjs"),
+  "play-remove": () => import("./play-remove-ACZGMZ66.mjs"),
+  "play": () => import("./play-F24KBY3E.mjs"),
+  "polkadot-dot": () => import("./polkadot-dot-XSL6CH7Y.mjs"),
+  "polygon-(matic)": () => import("./polygon-(matic)-QK6AVEFZ.mjs"),
+  "polyswarm-(nct)": () => import("./polyswarm-(nct)-U3ZP3UV5.mjs"),
+  "presention-chart": () => import("./presention-chart-KEUAFGRS.mjs"),
+  "previous": () => import("./previous-CXUZSMYB.mjs"),
+  "printer-slash": () => import("./printer-slash-FHN7ZGZA.mjs"),
+  "printer": () => import("./printer-EXP2TUBX.mjs"),
+  "profile-2user": () => import("./profile-2user-2RYJRQMJ.mjs"),
+  "profile-add": () => import("./profile-add-KFISOTYB.mjs"),
+  "profile-circle": () => import("./profile-circle-TSH5QZ7C.mjs"),
+  "profile-delete": () => import("./profile-delete-KF4HKEY2.mjs"),
+  "profile-remove": () => import("./profile-remove-R77GH533.mjs"),
+  "profile-tick": () => import("./profile-tick-IMTNQLDA.mjs"),
+  "profile": () => import("./profile-XXJPI2YS.mjs"),
+  "programming-arrow": () => import("./programming-arrow-S3RH32KL.mjs"),
+  "programming-arrows": () => import("./programming-arrows-6QYMIEZT.mjs"),
+  "python": () => import("./python-CCY64VEJ.mjs"),
+  "quant-(qnt)": () => import("./quant-(qnt)-FSI56GJT.mjs"),
+  "quote-down-circle": () => import("./quote-down-circle-D4TONKR2.mjs"),
+  "quote-down-square": () => import("./quote-down-square-Y73ZHLZG.mjs"),
+  "quote-down": () => import("./quote-down-I35AC5EP.mjs"),
+  "quote-up-circle": () => import("./quote-up-circle-QYUWBQD6.mjs"),
+  "quote-up-square": () => import("./quote-up-square-JI7X5OV3.mjs"),
+  "quote-up": () => import("./quote-up-GHH2CMI4.mjs"),
+  "radar-2": () => import("./radar-2-G3IDGM2V.mjs"),
+  "radar": () => import("./radar-NSTEQW2A.mjs"),
+  "radio": () => import("./radio-PWKSPHVN.mjs"),
+  "ram-2": () => import("./ram-2-34GTGTJV.mjs"),
+  "ram": () => import("./ram-S3KH4BGJ.mjs"),
+  "ranking": () => import("./ranking-ZKHNKSSK.mjs"),
+  "receipt-2": () => import("./receipt-2-K6KCVBPI.mjs"),
+  "receipt-3": () => import("./receipt-3-W2DPDQCX.mjs"),
+  "receipt-4": () => import("./receipt-4-BBCBKID4.mjs"),
+  "receipt-add": () => import("./receipt-add-MMULM3CP.mjs"),
+  "receipt-discount": () => import("./receipt-discount-DTGJ5GG4.mjs"),
+  "receipt-disscount": () => import("./receipt-disscount-UROQHNQV.mjs"),
+  "receipt-edit": () => import("./receipt-edit-XYAKIG7L.mjs"),
+  "receipt-item": () => import("./receipt-item-UHOXZEHD.mjs"),
+  "receipt-minus": () => import("./receipt-minus-YE3NIK7O.mjs"),
+  "receipt-search": () => import("./receipt-search-KPIW5HHW.mjs"),
+  "receipt-text": () => import("./receipt-text-IJ6RDIDR.mjs"),
+  "receipt": () => import("./receipt-BGTR7E2G.mjs"),
+  "receive-square-2": () => import("./receive-square-2-KD3YEDNP.mjs"),
+  "receive-square": () => import("./receive-square-MXCWGQBG.mjs"),
+  "received": () => import("./received-UPTPWFGL.mjs"),
+  "record-circle": () => import("./record-circle-LLOVJGTU.mjs"),
+  "record": () => import("./record-FFDG57TY.mjs"),
+  "recovery-convert": () => import("./recovery-convert-FG5WTV3S.mjs"),
+  "redo": () => import("./redo-KPD2ZWBH.mjs"),
+  "refresh-2": () => import("./refresh-2-DR6YWPNG.mjs"),
+  "refresh-circle": () => import("./refresh-circle-KCCTPSLG.mjs"),
+  "refresh-left-square": () => import("./refresh-left-square-L5P2S3TB.mjs"),
+  "refresh-right-square": () => import("./refresh-right-square-I4LM33UP.mjs"),
+  "refresh-square-2": () => import("./refresh-square-2-MW37WKSP.mjs"),
+  "refresh": () => import("./refresh-VHPIBIJN.mjs"),
+  "repeat-circle": () => import("./repeat-circle-6K7TVTIF.mjs"),
+  "repeat": () => import("./repeat-6N2QHTVB.mjs"),
+  "repeate-music": () => import("./repeate-music-S5K4DKVG.mjs"),
+  "repeate-one": () => import("./repeate-one-SXDPWXYE.mjs"),
+  "reserve": () => import("./reserve-GGY6SUYW.mjs"),
+  "rotate-left": () => import("./rotate-left-PRL746DC.mjs"),
+  "rotate-right": () => import("./rotate-right-F7DHAISG.mjs"),
+  "routing": () => import("./routing-R7ZGNS3H.mjs"),
+  "row-horizontal": () => import("./row-horizontal-Z2F4Y7D3.mjs"),
+  "row-vertical": () => import("./row-vertical-GPEPZZ4X.mjs"),
+  "ruler&pen": () => import("./ruler&pen-RHSL4GWI.mjs"),
+  "ruler": () => import("./ruler-IE6NEIKG.mjs"),
+  "safe-home": () => import("./safe-home-MLSTE577.mjs"),
+  "sagittarius": () => import("./sagittarius-S7KHAEEV.mjs"),
+  "scan-barcode": () => import("./scan-barcode-Y5WB2BYA.mjs"),
+  "scan": () => import("./scan-JRGTJF4Y.mjs"),
+  "scanner": () => import("./scanner-NAFIYRMM.mjs"),
+  "scanning": () => import("./scanning-NN65D52V.mjs"),
+  "scissor": () => import("./scissor-VQQ3YNLG.mjs"),
+  "screenmirroring": () => import("./screenmirroring-2MYTJL52.mjs"),
+  "scroll": () => import("./scroll-BECQ3T4N.mjs"),
+  "search-favorite-2": () => import("./search-favorite-2-76KDOFDV.mjs"),
+  "search-favorite": () => import("./search-favorite-PHVOKWOM.mjs"),
+  "search-normal-2": () => import("./search-normal-2-LZTEGKNW.mjs"),
+  "search-normal": () => import("./search-normal-KM2Q67UQ.mjs"),
+  "search-status-2": () => import("./search-status-2-FOTKY2FC.mjs"),
+  "search-status": () => import("./search-status-LMZVUS4R.mjs"),
+  "search-zoom-in-2": () => import("./search-zoom-in-2-X4ZID25E.mjs"),
+  "search-zoom-in": () => import("./search-zoom-in-CL4P6CRW.mjs"),
+  "search-zoom-out-2": () => import("./search-zoom-out-2-NCMB7CLS.mjs"),
+  "search-zoom-out": () => import("./search-zoom-out-QJ7U3SSC.mjs"),
+  "security-card": () => import("./security-card-7ZX42GXQ.mjs"),
+  "security-safe": () => import("./security-safe-WMJVORUU.mjs"),
+  "security-time": () => import("./security-time-DGUMCXAM.mjs"),
+  "security-user": () => import("./security-user-JR2DEGO7.mjs"),
+  "security": () => import("./security-E3BOTXYN.mjs"),
+  "send-2": () => import("./send-2-XQ4TSAXA.mjs"),
+  "send-sqaure-2": () => import("./send-sqaure-2-6P4IRHOU.mjs"),
+  "send-square": () => import("./send-square-NYPHYU6L.mjs"),
+  "send": () => import("./send-GNJQ6YNS.mjs"),
+  "setting-2": () => import("./setting-2-TDDF6VLW.mjs"),
+  "setting-3": () => import("./setting-3-M6OXA2LX.mjs"),
+  "setting-4": () => import("./setting-4-4JO4G5US.mjs"),
+  "setting-5": () => import("./setting-5-BF3TA7UM.mjs"),
+  "setting": () => import("./setting-X4KVWLYH.mjs"),
+  "settings": () => import("./settings-VUGTCK3V.mjs"),
+  "shapes-2": () => import("./shapes-2-VARRZZ2T.mjs"),
+  "shapes": () => import("./shapes-D3DKSARO.mjs"),
+  "share": () => import("./share-VPZ7TMUM.mjs"),
+  "shield-cross": () => import("./shield-cross-G2J5S5IG.mjs"),
+  "shield-search": () => import("./shield-search-2QJ7KVPN.mjs"),
+  "shield-security": () => import("./shield-security-WNAMKUBH.mjs"),
+  "shield-slash": () => import("./shield-slash-IWLVUXS6.mjs"),
+  "shield-tick": () => import("./shield-tick-BFPDDPAS.mjs"),
+  "shield": () => import("./shield-7SZ7K2HF.mjs"),
+  "ship": () => import("./ship-CS56JKGY.mjs"),
+  "shop-add": () => import("./shop-add-SVHT6LT4.mjs"),
+  "shop-remove": () => import("./shop-remove-Z34KDYMY.mjs"),
+  "shop": () => import("./shop-TBD2TK6R.mjs"),
+  "shopping-bag": () => import("./shopping-bag-E5WXG3NM.mjs"),
+  "shopping-cart": () => import("./shopping-cart-ZMD7CKLO.mjs"),
+  "shutterstock": () => import("./shutterstock-TYGOO4IS.mjs"),
+  "siacoin-(sc)": () => import("./siacoin-(sc)-TG5HG2UN.mjs"),
+  "sidebar-bottom": () => import("./sidebar-bottom-O6SUMSRZ.mjs"),
+  "sidebar-left": () => import("./sidebar-left-PCKYKM5V.mjs"),
+  "sidebar-right": () => import("./sidebar-right-WXA4L4QU.mjs"),
+  "sidebar-top": () => import("./sidebar-top-MLJ6RE3W.mjs"),
+  "signpost": () => import("./signpost-LISVRX4Y.mjs"),
+  "simcard-2": () => import("./simcard-2-OAK2YXGY.mjs"),
+  "simcard-3": () => import("./simcard-3-XBUJNZKT.mjs"),
+  "simcard": () => import("./simcard-OFFVEMLL.mjs"),
+  "size": () => import("./size-GN3RHAVC.mjs"),
+  "slack": () => import("./slack-4J2EYSMW.mjs"),
+  "slash": () => import("./slash-A5ODBJQV.mjs"),
+  "slider-horizontal-2": () => import("./slider-horizontal-2-D3E3ABFS.mjs"),
+  "slider-horizontal": () => import("./slider-horizontal-RHEPZFK5.mjs"),
+  "slider-vertical-2": () => import("./slider-vertical-2-FSD2UXNG.mjs"),
+  "slider-vertical": () => import("./slider-vertical-R3NJXJYF.mjs"),
+  "slider": () => import("./slider-AIHM3DAZ.mjs"),
+  "smallcaps": () => import("./smallcaps-3OTWNKN5.mjs"),
+  "smart-car": () => import("./smart-car-4YDSEVTH.mjs"),
+  "smart-home": () => import("./smart-home-DFFQN2P6.mjs"),
+  "smileys": () => import("./smileys-3FE4DCFL.mjs"),
+  "sms-edit": () => import("./sms-edit-SDVPW5XD.mjs"),
+  "sms-notification": () => import("./sms-notification-YTLRMNQ6.mjs"),
+  "sms-search": () => import("./sms-search-WPFUGKSV.mjs"),
+  "sms-star": () => import("./sms-star-KL4XJTAS.mjs"),
+  "sms-tracking": () => import("./sms-tracking-H7ATQXCQ.mjs"),
+  "sms": () => import("./sms-F364ZQ4B.mjs"),
+  "snapchat": () => import("./snapchat-7SD4MDCO.mjs"),
+  "solana-(sol)": () => import("./solana-(sol)-NKXRXDCS.mjs"),
+  "sort": () => import("./sort-2QR6HSSD.mjs"),
+  "sound": () => import("./sound-4F6CLTW4.mjs"),
+  "speaker": () => import("./speaker-TEVEL2UH.mjs"),
+  "speedometer": () => import("./speedometer-U6DUIZXB.mjs"),
+  "spotify": () => import("./spotify-B4Z5PFHL.mjs"),
+  "stacks-(stx)": () => import("./stacks-(stx)-K6VNUTCJ.mjs"),
+  "star-2": () => import("./star-2-MXZ5SAEA.mjs"),
+  "star-slash": () => import("./star-slash-434Q2G4H.mjs"),
+  "star": () => import("./star-UQJ4DFFW.mjs"),
+  "status-up": () => import("./status-up-HCYN7PIW.mjs"),
+  "status": () => import("./status-5UI25LML.mjs"),
+  "stellar-(xlm)": () => import("./stellar-(xlm)-JO37PFYI.mjs"),
+  "sticker": () => import("./sticker-JTIJ7Q72.mjs"),
+  "stickynote": () => import("./stickynote-KHE3M5ET.mjs"),
+  "stop-circle": () => import("./stop-circle-FZUX6H2M.mjs"),
+  "stop": () => import("./stop-7WOHBD3J.mjs"),
+  "story": () => import("./story-QAX4O74Z.mjs"),
+  "strongbox-2": () => import("./strongbox-2-VHK54BCI.mjs"),
+  "strongbox": () => import("./strongbox-ENVKCAK4.mjs"),
+  "subtitle": () => import("./subtitle-NWNIYICE.mjs"),
+  "sun-2": () => import("./sun-2-4TRY2CPZ.mjs"),
+  "sun-fog": () => import("./sun-fog-AR55JQX5.mjs"),
+  "sun": () => import("./sun-ZA7YST7S.mjs"),
+  "tag-2": () => import("./tag-2-OEVAB7PP.mjs"),
+  "tag-cross": () => import("./tag-cross-4EBZ6222.mjs"),
+  "tag-right": () => import("./tag-right-4IFPJH7P.mjs"),
+  "tag-user": () => import("./tag-user-IEWSKOJS.mjs"),
+  "tag": () => import("./tag-M3Y2BS2J.mjs"),
+  "task-square": () => import("./task-square-J3EDDUJ5.mjs"),
+  "task": () => import("./task-4SLWOGIX.mjs"),
+  "teacher": () => import("./teacher-4DKZLO26.mjs"),
+  "tenx-(pay)": () => import("./tenx-(pay)-F26GHRLI.mjs"),
+  "tether-usdt": () => import("./tether-usdt-FA4SXVWS.mjs"),
+  "text-block": () => import("./text-block-77DWUBMU.mjs"),
+  "text-bold": () => import("./text-bold-P4IGMNKI.mjs"),
+  "text-italic": () => import("./text-italic-H3KMV3OI.mjs"),
+  "text-underline": () => import("./text-underline-F3HIT2WF.mjs"),
+  "text": () => import("./text-WERDWRFI.mjs"),
+  "textalign-center": () => import("./textalign-center-EFBYXOAM.mjs"),
+  "textalign-justifycenter": () => import("./textalign-justifycenter-MZP44FRO.mjs"),
+  "textalign-justifyleft": () => import("./textalign-justifyleft-BTDDEVQI.mjs"),
+  "textalign-justifyright": () => import("./textalign-justifyright-MKZ6UDAR.mjs"),
+  "textalign-left": () => import("./textalign-left-4EOB5KWD.mjs"),
+  "textalign-right": () => import("./textalign-right-NGAOO3IF.mjs"),
+  "the-graph-(grt)": () => import("./the-graph-(grt)-RCU4XH2M.mjs"),
+  "theta-(theta)": () => import("./theta-(theta)-T5YYU7NA.mjs"),
+  "thorchain-(rune)": () => import("./thorchain-(rune)-O34PIEKG.mjs"),
+  "tick-circle": () => import("./tick-circle-VNDDHPM5.mjs"),
+  "tick-square": () => import("./tick-square-H46MOXIJ.mjs"),
+  "ticket-2": () => import("./ticket-2-HYXTVJ6M.mjs"),
+  "ticket-discount": () => import("./ticket-discount-X7NVDHLE.mjs"),
+  "ticket-expired": () => import("./ticket-expired-V4PNI766.mjs"),
+  "ticket-star": () => import("./ticket-star-MG6SZJAY.mjs"),
+  "ticket": () => import("./ticket-FOMYMD6O.mjs"),
+  "timer-2": () => import("./timer-2-Z7WRONOS.mjs"),
+  "timer-pause": () => import("./timer-pause-WQEFATQX.mjs"),
+  "timer-start": () => import("./timer-start-OSM2QEDE.mjs"),
+  "timer": () => import("./timer-26WG4YSO.mjs"),
+  "toggle-off": () => import("./toggle-off-3557JOO2.mjs"),
+  "toggle-on-circle": () => import("./toggle-on-circle-TCIXSSBG.mjs"),
+  "toggle-on": () => import("./toggle-on-HEMSC2FK.mjs"),
+  "trade": () => import("./trade-PMQQ7LAI.mjs"),
+  "transaction-minus": () => import("./transaction-minus-P5ALCD5F.mjs"),
+  "translate": () => import("./translate-J7FFTNN7.mjs"),
+  "trash-bin": () => import("./trash-bin-ZYIGQDDL.mjs"),
+  "tree": () => import("./tree-YYWHT7JY.mjs"),
+  "trello": () => import("./trello-6GXFL4HJ.mjs"),
+  "trend-down": () => import("./trend-down-7KQOQYM4.mjs"),
+  "trend-up": () => import("./trend-up-U3NVEWUS.mjs"),
+  "triangle": () => import("./triangle-KKZ26LME.mjs"),
+  "trontron-(trx)": () => import("./trontron-(trx)-NN3PLAYU.mjs"),
+  "truck-remove": () => import("./truck-remove-UTNODSY2.mjs"),
+  "truck-tick": () => import("./truck-tick-WH2MA3Z3.mjs"),
+  "truck-time": () => import("./truck-time-6Q2UWSGN.mjs"),
+  "truck": () => import("./truck-MDTGOU6Y.mjs"),
+  "trush-square": () => import("./trush-square-TAPNZWML.mjs"),
+  "twitch": () => import("./twitch-CVCAOY47.mjs"),
+  "ui8": () => import("./ui8-7LS6J3Y5.mjs"),
+  "undo": () => import("./undo-MULOPMJG.mjs"),
+  "unlimited": () => import("./unlimited-55J5YXFN.mjs"),
+  "unlock": () => import("./unlock-SFQ6HCJS.mjs"),
+  "usd-coin-(usdc)": () => import("./usd-coin-(usdc)-723RQF75.mjs"),
+  "user-add": () => import("./user-add-ZFAFYOCW.mjs"),
+  "user-circle-add": () => import("./user-circle-add-U6R6AGEQ.mjs"),
+  "user-edit": () => import("./user-edit-IF4RJ6C2.mjs"),
+  "user-minus": () => import("./user-minus-7LJK56KP.mjs"),
+  "user-octagon": () => import("./user-octagon-W3VFKB4X.mjs"),
+  "user-remove": () => import("./user-remove-ATJT4YID.mjs"),
+  "user-search": () => import("./user-search-MZRWMGFU.mjs"),
+  "user-square": () => import("./user-square-LXAUND4R.mjs"),
+  "user-tag": () => import("./user-tag-QBSLDMS4.mjs"),
+  "user-tick": () => import("./user-tick-UFGNJMTG.mjs"),
+  "user": () => import("./user-A5O34QDV.mjs"),
+  "velas-(vlx)": () => import("./velas-(vlx)-ESM67Y7A.mjs"),
+  "verify": () => import("./verify-VUA3J6PW.mjs"),
+  "vibe-vibe": () => import("./vibe-vibe-F2ZK74K6.mjs"),
+  "video-add": () => import("./video-add-P6NDGJ7W.mjs"),
+  "video-circle": () => import("./video-circle-S5XBZRDR.mjs"),
+  "video-horizontal": () => import("./video-horizontal-UIARNM7Q.mjs"),
+  "video-octagon": () => import("./video-octagon-GKROM4CW.mjs"),
+  "video-play": () => import("./video-play-5JN4XVD7.mjs"),
+  "video-remove": () => import("./video-remove-MMGKBE3O.mjs"),
+  "video-slash": () => import("./video-slash-TDFGGVFH.mjs"),
+  "video-square": () => import("./video-square-6K6OELAI.mjs"),
+  "video-tick": () => import("./video-tick-G5F453P6.mjs"),
+  "video-time": () => import("./video-time-4L6RM7SB.mjs"),
+  "video-vertical": () => import("./video-vertical-H27HJCLY.mjs"),
+  "video": () => import("./video-FIUN3QBY.mjs"),
+  "voice-circle": () => import("./voice-circle-JA7CYSKB.mjs"),
+  "voice-square": () => import("./voice-square-DCDCFOLL.mjs"),
+  "volume-cross": () => import("./volume-cross-MJHVYIST.mjs"),
+  "volume-high": () => import("./volume-high-OKDXDTZJ.mjs"),
+  "volume-low-2": () => import("./volume-low-2-UV3HZPW7.mjs"),
+  "volume-low": () => import("./volume-low-CN76IKNS.mjs"),
+  "volume-mute": () => import("./volume-mute-ADJ4YK3D.mjs"),
+  "volume-slash": () => import("./volume-slash-UYPVZ27T.mjs"),
+  "volume-up": () => import("./volume-up-OMMMCB54.mjs"),
+  "vuesax": () => import("./vuesax-DFU56M2I.mjs"),
+  "wallet-2": () => import("./wallet-2-WKAMELBX.mjs"),
+  "wallet-3": () => import("./wallet-3-P3RW7PZ4.mjs"),
+  "wallet-4": () => import("./wallet-4-Z4YXLS6R.mjs"),
+  "wallet-add-2": () => import("./wallet-add-2-OTK76E5B.mjs"),
+  "wallet-add": () => import("./wallet-add-CNWIDQME.mjs"),
+  "wallet-check": () => import("./wallet-check-3PQBOR4E.mjs"),
+  "wallet-minus": () => import("./wallet-minus-6GUS7MOQ.mjs"),
+  "wallet-money": () => import("./wallet-money-OIICWF3Y.mjs"),
+  "wallet-remove": () => import("./wallet-remove-LJTMGN4H.mjs"),
+  "wallet-search": () => import("./wallet-search-H7BMVVTP.mjs"),
+  "wallet": () => import("./wallet-3M22EH5B.mjs"),
+  "wanchain-(wan)-2": () => import("./wanchain-(wan)-2-Y3XDYQ7X.mjs"),
+  "wanchain-(wan)": () => import("./wanchain-(wan)-FN2F6PSF.mjs"),
+  "warning-2": () => import("./warning-2-6BEW2KVC.mjs"),
+  "watch-status": () => import("./watch-status-XXDLW4HF.mjs"),
+  "watch": () => import("./watch-2YBDLUQH.mjs"),
+  "weight": () => import("./weight-4Y3HYOPZ.mjs"),
+  "whatsapp": () => import("./whatsapp-2U4QYG3E.mjs"),
+  "wifi-square": () => import("./wifi-square-LOZ3OX3Q.mjs"),
+  "wifi": () => import("./wifi-VACBULLI.mjs"),
+  "wind-2": () => import("./wind-2-X73DYYGJ.mjs"),
+  "wind": () => import("./wind-42DWVJAK.mjs"),
+  "windows": () => import("./windows-YZICEQ5S.mjs"),
+  "wing-wing": () => import("./wing-wing-XH43XONG.mjs"),
+  "woman": () => import("./woman-4YDVRCVX.mjs"),
+  "xd": () => import("./xd-JQOQL65F.mjs"),
+  "xiaomi": () => import("./xiaomi-UYJPVA7W.mjs"),
+  "xrp-(xrp)": () => import("./xrp-(xrp)-5KITDW3A.mjs"),
+  "youtube": () => import("./youtube-LTN24OJP.mjs"),
+  "zel-(zel)": () => import("./zel-(zel)-RJMRZCHH.mjs"),
+  "zoom": () => import("./zoom-5TMEZLSI.mjs")
 };
 
 // src/recolor.ts
@@ -3847,6 +1009,12 @@ function getRecoloredLottie(iconId, json, color) {
 
 // src/Icon.tsx
 var FALLBACK_COLOR = "#000000";
+function cssColorToHex(color) {
+  if (/^#[\da-f]{3}(?:[\da-f]{3})?$/i.test(color)) return color;
+  const match = color.match(/^rgba?\(\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)/i);
+  if (!match) return FALLBACK_COLOR;
+  return `#${match.slice(1, 4).map((channel) => Math.round(Number(channel)).toString(16).padStart(2, "0")).join("")}`;
+}
 function useLatestRef(value) {
   const ref = React.useRef(value);
   ref.current = value;
@@ -3858,16 +1026,25 @@ function Icon({
   color = "currentColor",
   mode = "static",
   onClick,
+  bindId,
   resetAfterPlay = true,
   className,
   style
 }) {
-  const resolvedColor = color === "currentColor" ? FALLBACK_COLOR : color;
   const rawJsonRef = React.useRef(null);
+  const rootRef = React.useRef(null);
   const [jsonReady, setJsonReady] = React.useState(false);
   const [lottieInit, setLottieInit] = React.useState(false);
+  const [inheritedColor, setInheritedColor] = React.useState(FALLBACK_COLOR);
   const resetAfterPlayRef = useLatestRef(resetAfterPlay);
   const modeRef = useLatestRef(mode);
+  const onClickRef = useLatestRef(onClick);
+  const resolvedColor = color === "currentColor" ? inheritedColor : color;
+  React.useEffect(() => {
+    if (color !== "currentColor" || !rootRef.current || typeof window === "undefined") return;
+    const nextColor = cssColorToHex(window.getComputedStyle(rootRef.current).color);
+    setInheritedColor((current) => current === nextColor ? current : nextColor);
+  }, [color, id, style?.color]);
   React.useEffect(() => {
     let cancelled = false;
     rawJsonRef.current = null;
@@ -3931,10 +1108,22 @@ function Icon({
       animRef.current?.goToAndPlay(0, true);
     }
   }, [mode]);
-  if (!animationData) return null;
+  React.useEffect(() => {
+    if (!bindId || typeof document === "undefined") return;
+    const target = document.getElementById(bindId);
+    if (!target) return;
+    const triggerAnimation = () => {
+      if (modeRef.current !== "onClick") return;
+      animRef.current?.goToAndPlay(0, true);
+      onClickRef.current?.();
+    };
+    target.addEventListener("click", triggerAnimation);
+    return () => target.removeEventListener("click", triggerAnimation);
+  }, [bindId]);
   return /* @__PURE__ */ React.createElement(
     "div",
     {
+      ref: rootRef,
       className,
       style: {
         width: size,

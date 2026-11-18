@@ -6,12 +6,20 @@ import type { LottieJSON } from "./types";
 
 const FALLBACK_COLOR = "#000000";
 
+function cssColorToHex(color: string): string {
+  if (/^#[\da-f]{3}(?:[\da-f]{3})?$/i.test(color)) return color;
+  const match = color.match(/^rgba?\(\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)/i);
+  if (!match) return FALLBACK_COLOR;
+  return `#${match.slice(1, 4).map((channel) => Math.round(Number(channel)).toString(16).padStart(2, "0")).join("")}`;
+}
+
 export interface IconProps {
   id: IconId;
   size?: number | string;
   color?: string;
   mode?: "static" | "loop" | "onClick" | "hover";
   onClick?: () => void;
+  bindId?: string;
   resetAfterPlay?: boolean;
   className?: string;
   style?: React.CSSProperties;
@@ -29,17 +37,27 @@ export default function Icon({
   color = "currentColor",
   mode = "static",
   onClick,
+  bindId,
   resetAfterPlay = true,
   className,
   style,
 }: IconProps) {
-  const resolvedColor = color === "currentColor" ? FALLBACK_COLOR : color;
   const rawJsonRef = React.useRef<LottieJSON | null>(null);
+  const rootRef = React.useRef<HTMLDivElement>(null);
   const [jsonReady, setJsonReady] = React.useState(false);
   const [lottieInit, setLottieInit] = React.useState(false);
+  const [inheritedColor, setInheritedColor] = React.useState(FALLBACK_COLOR);
 
   const resetAfterPlayRef = useLatestRef(resetAfterPlay);
   const modeRef = useLatestRef(mode);
+  const onClickRef = useLatestRef(onClick);
+  const resolvedColor = color === "currentColor" ? inheritedColor : color;
+
+  React.useEffect(() => {
+    if (color !== "currentColor" || !rootRef.current || typeof window === "undefined") return;
+    const nextColor = cssColorToHex(window.getComputedStyle(rootRef.current).color);
+    setInheritedColor((current) => current === nextColor ? current : nextColor);
+  }, [color, id, style?.color]);
 
   React.useEffect(() => {
     let cancelled = false;
@@ -120,10 +138,24 @@ export default function Icon({
     }
   }, [mode]);
 
-  if (!animationData) return null;
+  React.useEffect(() => {
+    if (!bindId || typeof document === "undefined") return;
+    const target = document.getElementById(bindId);
+    if (!target) return;
+
+    const triggerAnimation = () => {
+      if (modeRef.current !== "onClick") return;
+      animRef.current?.goToAndPlay(0, true);
+      onClickRef.current?.();
+    };
+
+    target.addEventListener("click", triggerAnimation);
+    return () => target.removeEventListener("click", triggerAnimation);
+  }, [bindId]);
 
   return (
     <div
+      ref={rootRef}
       className={className}
       style={{
         width: size,

@@ -1,8 +1,8 @@
 # icon-tree-animate
 
-React component for rendering Lottie icons from the [IconTree](https://icontree.cosmoscope.workers.dev) API, with runtime color control, size control, and 4 playback modes.
+An offline-ready React library of **946 animated Lottie icons**. Each icon is bundled with the package and lazy-loaded locally. After installation, rendering and icon search make no requests to an external icon API or host.
 
-No icon files bundled — icons are fetched from the API at runtime. The registry contains only API links, keeping the package lightweight.
+Use the component to render an icon at a chosen size and color, with static, loop, click, or hover playback. The package supports React 18 and later and includes ESM, CommonJS, and TypeScript declaration outputs.
 
 ## Install
 
@@ -10,107 +10,101 @@ No icon files bundled — icons are fetched from the API at runtime. The registr
 npm install icon-tree-animate
 ```
 
-Requires `react` and `react-dom` (>=18) and `lottie-react` as dependencies.
+`react` and `react-dom` version 18 or later are peer dependencies. `lottie-react` is installed as a package dependency.
 
-## Component
+## Quick start
 
 ```tsx
 import Icon from "icon-tree-animate";
+
+export function SaveAction() {
+  return (
+    <button type="button" onClick={() => save()}>
+      <Icon id="heart" size={24} color="#e5484d" mode="onClick" />
+      Save
+    </button>
+  );
+}
 ```
 
-### Props
+The library also has named exports:
+
+```tsx
+import { Icon, recolorLottie, getRecoloredLottie } from "icon-tree-animate";
+import type { IconId, IconProps, LottieJSON } from "icon-tree-animate";
+```
+
+## Props
 
 | Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `id` | `IconId` | required | Icon identifier (e.g. `"heart"`, `"arrow-right"`) |
-| `size` | `number \| string` | `24` | Width and height of the icon |
-| `color` | `string` | `"currentColor"` | Hex color string, e.g. `"#ff0000"` |
-| `mode` | `"static" \| "loop" \| "onClick" \| "hover"` | `"static"` | Playback mode |
-| `onClick` | `() => void` | — | Callback for `onClick` mode |
-| `resetAfterPlay` | `boolean` | `true` | Reset to frame 0 after animation completes |
-| `className` | `string` | — | CSS class |
-| `style` | `React.CSSProperties` | — | Inline styles |
+|---|---|---|---|
+| `id` | `IconId` | required | Icon name, such as `"heart"` or `"arrow-right"` |
+| `size` | `number \| string` | `24` | Width and height of the wrapper |
+| `color` | `string` | `"currentColor"` | Hex color such as `"#ff0000"`; `"currentColor"` follows the wrapper's computed text color |
+| `mode` | `"static" \| "loop" \| "onClick" \| "hover"` | `"static"` | Playback behavior |
+| `onClick` | `() => void` | — | Callback for click playback |
+| `bindId` | `string` | — | DOM `id` of an external element whose click triggers click playback |
+| `resetAfterPlay` | `boolean` | `true` | Return to frame zero after playback completes |
+| `className` | `string` | — | Class applied to the icon wrapper |
+| `style` | `React.CSSProperties` | — | Inline styles applied to the icon wrapper |
 
-### Modes
+## Playback modes
 
-- **static** — Renders frame 0 only. No animation.
-- **loop** — Autoplays with infinite loop.
-- **onClick** — Idle at frame 0. Plays once on click. Calls `onClick` if provided.
-- **hover** — Idle at frame 0. Plays once on mouse enter. Lets animation finish on mouse leave.
-
-## Usage
-
-### Component
+- `static` displays the first frame.
+- `loop` plays continuously.
+- `onClick` plays once when the icon is clicked. It also calls `onClick` when provided.
+- `hover` plays once when a pointer enters the icon.
 
 ```tsx
-import Icon from "icon-tree-animate";
-
-<Icon id="heart" size={48} color="#ff0000" mode="static" />
-<Icon id="heart" size={48} color="#00ff00" mode="loop" />
-<Icon id="heart" size={48} color="#0000ff" mode="onClick" onClick={() => console.log("clicked")} />
-<Icon id="heart" size={48} color="#ffaa00" mode="hover" />
+<Icon id="heart" mode="static" />
+<Icon id="arrow-right" mode="loop" color="#2477d4" />
+<Icon id="tick-circle" mode="onClick" onClick={() => save()} />
+<Icon id="star" mode="hover" />
 ```
 
-### Search icons
+### Trigger playback from another element
 
-Find icon IDs by name using the CLI:
+Set `bindId` to the DOM `id` of an existing element. The icon must use `mode="onClick"`. Clicking the matching element starts the icon animation and calls `onClick` when provided.
+
+```tsx
+<button id="like-button" type="button">Like</button>
+<Icon id="heart" mode="onClick" bindId="like-button" onClick={() => like()} />
+```
+
+The target must be present when the effect runs. Prefer a real button or link so the trigger remains keyboard accessible.
+
+## Find an icon
+
+Search the bundled icon index from the command line:
 
 ```bash
-npx icontree search "arrow"
-# → arrow-2
-# → arrow-3
-# → arrow-circle-down
-# → arrow-circle-left
-# → arrow-right
-
 npx icontree search "arrow right"
-# → arrow-right
-# → arrow-right2
-# → arrow-right3
-
-npx icontree search "arrow,icon,gg"
-# → arrow-2
-# → arrow-3
-# → arrow-circle-down
-# → icon-(icx)
-# → (all results from each keyword combined, no duplicates)
+npx icontree search "heart,star"
 ```
 
-Multiple keywords — separate by comma or space. Results are deduplicated.
+Search matches icon IDs containing any query term. Commas and spaces both separate terms. Results come from the package's local icon index; the command does not make network requests.
 
-## How it works
+## Recoloring
 
-**Runtime:** The icon JSON is fetched from the IconTree API (lazy, one request per icon), recolored in-memory using the `color` prop, and rendered via Lottie. Results are memoized by icon + color.
+The `color` prop updates Lottie solid fill and stroke colors in memory. `currentColor` uses the wrapper's computed CSS text color. The exported `recolorLottie(json, color)` function returns a recolored copy of the supplied animation data; `getRecoloredLottie(iconId, json, color)` also memoizes results by icon and color.
 
-**Recolor:** The `recolorLottie()` function deep-clones the JSON, converts hex to Lottie RGBA float format, and walks the layer tree to update fill and stroke colors.
+## Offline behavior and package contents
 
-**Registry:** `src/registry.ts` maps icon IDs to API fetch URLs. No icon data is shipped with the package.
+The package includes all 946 icon animations as local modules. ESM builds lazy-load each icon from a package-local chunk; the CommonJS build contains the registry and icon data in its local bundle. Neither format fetches icon data from a remote URL. The CLI searches the included local index.
 
-## Regenerating the registry
+## Build and update the icon registry
 
-When you add new icon files to your source folder, regenerate the registry:
+The repository keeps source animation JSON files in `src/icons/`. After adding or removing source icons, regenerate the typed registry and CLI index, then build:
 
 ```bash
 npm run generate-registry
+npm run build
 ```
 
-This reads the `.json` filenames from the configured source folder and writes `src/registry.ts` with fetch entries pointing to the API.
+The build writes ESM, CommonJS, TypeScript declarations, and local ESM icon chunks to `dist/`. Only the built files and CLI files are included in the npm package.
 
-## Build
+Before publishing a release, inspect the package contents and compressed size:
 
 ```bash
-npm run build        # Compile dist/index.js + dist/index.mjs
-```
-
-## Project structure
-
-```
-├── scripts/
-│   └── generate-registry.js   # Generate registry.ts from a folder of icon names
-├── src/
-│   ├── Icon.tsx               # React component
-│   ├── recolor.ts             # Recolor function + memo cache
-│   ├── registry.ts            # Auto-generated icon → API URL map
-│   └── types.ts               # Lottie type definitions
-└── dist/                      # Built output (no icon data)
+npm pack --dry-run
 ```

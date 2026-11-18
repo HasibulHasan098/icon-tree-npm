@@ -1,8 +1,18 @@
 import { defineConfig } from "tsup";
 
-export default defineConfig({
-  entry: ["src/index.ts"],
-  format: ["esm", "cjs"],
-  clean: true,
-  external: ["react", "react-dom", "lottie-react"],
-});
+export default defineConfig([
+  {
+    entry: ["src/index.ts"],
+    format: ["esm"],
+    splitting: true,
+    dts: true,
+    clean: true,
+    external: ["react", "react-dom", "lottie-react"],
+  },
+  {
+    entry: ["src/index.ts"],
+    format: ["cjs"],
+    clean: false,
+    external: ["react", "react-dom", "lottie-react"],
+  },
+]);

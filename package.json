@@ -1,11 +1,24 @@
 {
   "name": "icon-tree-animate",
-  "version": "0.2.3",
-  "description": "React component for rendering Lottie icons from the IconTree API",
+  "version": "0.2.5",
+  "description": "Offline-ready React animated icon library with bundled Lottie icons, runtime recoloring, and static, loop, click, and hover modes.",
+  "keywords": [
+    "react",
+    "icon",
+    "icons",
+    "animated-icons",
+    "lottie",
+    "lottie-icons",
+    "icon-library",
+    "offline",
+    "recolorable-icons"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
@@ -14,7 +27,7 @@
     "icontree": "scripts/search-icons.js"
   },
   "scripts": {
-    "generate-registry": "node scripts/generate-registry.js \"D:/Downloads/Iconaassets/public/icons\"",
+    "generate-registry": "node scripts/generate-registry.js ./src/icons",
     "build": "tsup"
   },
   "peerDependencies": {
@@ -27,13 +40,11 @@
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "tsup": "^8.0.0",
+    "tsup": "^9.0.0",
     "typescript": "^5.0.0"
   },
   "files": [
     "dist",
-    "scripts",
-    "src/registry.ts",
-    "src/types.ts"
+    "scripts"
   ]
 }
