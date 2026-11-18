@@ -34,6 +34,20 @@ import { Icon, recolorLottie, getRecoloredLottie } from "icon-tree-animate";
 import type { IconId, IconProps, LottieJSON } from "icon-tree-animate";
 ```
 
+## Tree-shakeable per-icon imports
+
+For icons known at build time, import each icon from its own ESM subpath. The bundle then includes only the icon modules imported by your app, instead of the full dynamic registry.
+
+```tsx
+import HeartIcon from "icon-tree-animate/icons/heart";
+import CopyIcon from "icon-tree-animate/icons/copy";
+
+<HeartIcon size={24} color="#e5484d" mode="onClick" />
+<CopyIcon size={16} color="#2477d4" mode="hover" />
+```
+
+These per-icon components accept the same props as the generic `Icon`, except that the icon ID is fixed by the import path. Continue using the generic `Icon` with `id` when the icon name is selected dynamically at runtime; that API includes the registry so it can resolve any ID.
+
 ## Props
 
 | Prop | Type | Default | Description |
@@ -90,7 +104,7 @@ The `color` prop updates Lottie solid fill and stroke colors in memory. `current
 
 ## Offline behavior and package contents
 
-The package includes all 946 icon animations as local modules. ESM builds lazy-load each icon from a package-local chunk; the CommonJS build contains the registry and icon data in its local bundle. Neither format fetches icon data from a remote URL. The CLI searches the included local index.
+The package includes all 946 icon animations as local modules. Neither API fetches icon data from a remote URL. The CLI searches the included local index. Per-icon ESM subpaths let bundlers emit only the selected animations; the generic `Icon` entry is intended for runtime-selected IDs and includes the registry.
 
 ## Build and update the icon registry
 
@@ -101,7 +115,7 @@ npm run generate-registry
 npm run build
 ```
 
-The build writes ESM, CommonJS, TypeScript declarations, and local ESM icon chunks to `dist/`. Only the built files and CLI files are included in the npm package.
+The build writes the generic ESM/CommonJS entries, tree-shakeable per-icon ESM entries and declarations, and CommonJS compatibility entries to `dist/`. Only the built files and CLI files are included in the npm package.
 
 Before publishing a release, inspect the package contents and compressed size:
 

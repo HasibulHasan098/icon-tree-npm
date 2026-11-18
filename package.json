@@ -1,6 +1,6 @@
 {
   "name": "icon-tree-animate",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Offline-ready React animated icon library with bundled Lottie icons, runtime recoloring, and static, loop, click, and hover modes.",
   "keywords": [
     "react",
@@ -21,6 +21,11 @@
       "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
+    },
+    "./icons/*": {
+      "types": "./dist/icon-entries/*.d.mts",
+      "import": "./dist/icon-entries/*.mjs",
+      "require": "./dist/icons/*.cjs"
     }
   },
   "bin": {
@@ -28,7 +33,7 @@
   },
   "scripts": {
     "generate-registry": "node scripts/generate-registry.js ./src/icons",
-    "build": "tsup"
+    "build": "npm run generate-registry && tsup && node scripts/generate-cjs-icons.js"
   },
   "peerDependencies": {
     "react": ">=18",

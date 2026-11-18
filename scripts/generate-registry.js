@@ -73,5 +73,29 @@ const registryPath = path.resolve(__dirname, "../src/registry.ts");
 fs.writeFileSync(registryPath, content, "utf-8");
 fs.writeFileSync(path.resolve(__dirname, "icon-names.json"), JSON.stringify(names, null, 2) + "\n", "utf-8");
 
+const entryDir = path.resolve(__dirname, "../src/icon-entries");
+fs.mkdirSync(entryDir, { recursive: true });
+const wantedEntries = new Set(names.map((name) => `${name}.tsx`));
+for (const file of fs.readdirSync(entryDir)) {
+  if (file.endsWith(".tsx") && !wantedEntries.has(file)) fs.unlinkSync(path.join(entryDir, file));
+}
+for (const name of names) {
+  const entry = [
+    `import React from "react";`,
+    `import IconRenderer from "../IconRenderer";`,
+    `import animationData from ${JSON.stringify(`../icons/${name}.json`)};`,
+    `import type { IconRendererProps } from "../IconRenderer";`,
+    "",
+    `const loadAnimation = () => Promise.resolve(animationData);`,
+    `type IconProps = Omit<IconRendererProps, "id" | "loadAnimation">;`,
+    "",
+    `export default function IconEntry(props: IconProps) {`,
+    `  return <IconRenderer id=${JSON.stringify(name)} loadAnimation={loadAnimation} {...props} />;`,
+    `}`,
+    "",
+  ].join("\n");
+  fs.writeFileSync(path.join(entryDir, `${name}.tsx`), entry, "utf-8");
+}
+
 console.log(`\n✓ Registry generated at src/registry.ts`);
-console.log(`  ${names.length} icon(s) — local lazy imports`);
+console.log(`  ${names.length} icons — generic registry plus tree-shakeable subpath entries`);
